@@ -1,87 +1,89 @@
-  <section style="max-width: 800px; text-align: center; padding: 2rem;">
-    <p style="font-size: 1.25rem; color: #ff1e56;">
-      Welcome to <strong>Goth Goodies by Hannah’s Hippy & Horror</strong> — where cursed couture meets divine drama. Think <em>Morticia Addams</em> with a paintbrush, Beetlejuice with a glue gun, and a coffin full of color.
-    </p>
-
-    <p style="color: #eaeaea; font-size: 1rem; line-height: 1.5;">
-      Each piece is brewed in chaos, kissed with glamorless elegance, and sealed with a razor-sharp bow. From hand-painted art to accessories born from your nightmares, you’re not shopping... you’re summoning.
-    </p>
-
-    <a href="#" style="margin-top: 2rem; display: inline-block; font-size: 1.2rem; background: #7D00FF; color: black; padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none; box-shadow: 0 0 10px #39FF14;">
-      Enter the Crypt
-    </a>
-  </section>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Goth Goodies by Hannah's Hippy & Horror</title>
-  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      background-color: #000000;
-      color: #ff0000;
-      font-family: 'UnifrakturCook', cursive;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      overflow-x: hidden;
-    }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Goth Goodies</title>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-    h1 {
-      font-size: 3rem;
-      color: #ff0000;
-      text-shadow: 2px 2px #8b0000;
-      position: relative;
-      animation: shake 2s infinite ease-in-out;
-      transition: transform 0.3s ease-in-out;
-      text-align: center;
-      padding: 0 10px;
-    }
+    body {
+      font-family: 'UnifrakturCook', cursive;
+      background-color: #0a0a0a;
+      color: #eee;
+      overflow-x: hidden;
+    }
 
-    h1::after {
-      content: '';
-      position: absolute;
-      left: 50%;
-      top: 100%;
-      transform: translateX(-50%);
-      width: 80%;
-      height: 15px;
-      background: radial-gradient(circle, rgba(255,0,0,0.8), transparent);
-      border-radius: 50%;
-      animation: drip 1.5s infinite;
-    }
+    .hero {
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1570813095773-bdc2bdfb0f86?fit=crop&w=1400&q=80') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      animation: zoom 30s ease-in-out infinite;
+    }
 
-    @keyframes drip {
-      0% { transform: translateX(-50%) scaleY(1); opacity: 1; }
-      50% { transform: translateX(-50%) scaleY(2); opacity: 0.5; }
-      100% { transform: translateX(-50%) scaleY(1); opacity: 1; }
-    }
+    @keyframes zoom {
+      0% { background-size: 100%; }
+      50% { background-size: 110%; }
+      100% { background-size: 100%; }
+    }
 
-    @keyframes shake {
-      0% { transform: translate(1px, 1px) rotate(0deg); }
-      10% { transform: translate(-1px, -2px) rotate(-1deg); }
-      20% { transform: translate(-3px, 0px) rotate(1deg); }
-      30% { transform: translate(3px, 2px) rotate(0deg); }
-      40% { transform: translate(1px, -1px) rotate(1deg); }
-      50% { transform: translate(-1px, 2px) rotate(-1deg); }
-      60% { transform: translate(-3px, 1px) rotate(0deg); }
-      70% { transform: translate(3px, 1px) rotate(-1deg); }
-      80% { transform: translate(-1px, -1px) rotate(1deg); }
-      90% { transform: translate(1px, 2px) rotate(0deg); }
-      100% { transform: translate(1px, -2px) rotate(-1deg); }
-    }
+    .hero h1 {
+      font-size: 3.5rem;
+      color: #b30000;
+      text-shadow: 3px 3px #000;
+      margin-bottom: 1rem;
+    }
 
-    h1:hover {
-      transform: scale(1.05);
-    }
-  </style>
+    .hero p {
+      font-size: 1.3rem;
+      color: #ccc;
+      margin-bottom: 2rem;
+    }
+
+    .btn-enter {
+      padding: 12px 25px;
+      font-size: 1rem;
+      background: #b30000;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .btn-enter:hover {
+      background: #660000;
+    }
+
+    .content {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <h1>🦇💄 Goth Goodies has Risen —<br>Resurrected from the dead with the vamps 🩸🧁🦇</h1>
+
+  <section class="hero">
+    <h1>🦇 Goth Goodies</h1>
+    <p>Resurrected from the crypt — where beauty bleeds black</p>
+    <a href="#main" class="btn-enter">Enter the Crypt</a>
+  </section>
+
+  <section id="main" class="content">
+    <h2>Welcome to the Boutique</h2>
+    <p>Hand-painted horrors, gothic treasures, and divine drama — curated for the damned and the dreamy.</p>
+  </section>
+
 </body>
 </html>
