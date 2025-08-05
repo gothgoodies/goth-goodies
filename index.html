@@ -4,108 +4,90 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Goth Goodies</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Spectral&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Spectral', serif;
-      background: linear-gradient(to bottom, #0d0d0d, #1c1c1c);
-      color: #e0e0e0;
+      font-family: 'Cormorant Garamond', serif;
+      background-color: #0d0d0d;
+      color: #e6e6e6;
       text-align: center;
-      min-height: 100vh;
-      background-image: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
+      background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
     }
 
     header {
+      padding: 60px 20px 20px;
+    }
+
+    h1 {
       font-family: 'Cinzel', serif;
-      font-size: 2.5em;
-      padding-top: 80px;
+      font-size: 2.8em;
       color: #b30000;
+      margin-bottom: 10px;
     }
 
-    p {
-      font-size: 1.1em;
-      margin: 20px auto;
-      width: 80%;
-      max-width: 600px;
-      line-height: 1.7;
-      color: #ccc;
-    }
-
-    a {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 12px 30px;
-      background-color: #2e0e40;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 8px;
+    h2 {
       font-family: 'Cinzel', serif;
-      font-weight: bold;
-      border: 1px solid #880808;
-      transition: background 0.3s ease;
-    }
-
-    a:hover {
-      background-color: #460e4d;
-    }
-
-    footer {
-      margin-top: 60px;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #777;
-    }
-
-    .tagline {
-      font-style: italic;
-      font-size: 1.3em;
-      margin-top: 10px;
-      color: #999;
-    }
-
-    .bloodline {
-      font-family: 'Cinzel', serif;
-      font-size: 1.5em;
-      color: #a10000;
+      font-size: 1.8em;
+      color: #d9d9d9;
       margin-top: 50px;
     }
 
-    .divider {
-      width: 60px;
-      height: 1px;
-      background: #444;
-      margin: 40px auto;
+    p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: 10px auto;
+      line-height: 1.7em;
     }
+
+    .crypt-btn {
+      background-color: transparent;
+      border: 2px solid #9933ff;
+      color: #9933ff;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-size: 1.2em;
+      margin-top: 30px;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+
+    .crypt-btn:hover {
+      background-color: #9933ff;
+      color: #0d0d0d;
+    }
+
+    footer {
+      margin-top: 80px;
+      font-size: 0.9em;
+      color: #999;
+    }
+
+    .emoji {
+      font-size: 1.3em;
+    }
+
   </style>
 </head>
-
 <body>
+
   <header>
-    🦇 Goth Goodies
+    <div class="emoji">🦇</div>
+    <h1>Goth Goodies</h1>
+    <p><em>Resurrected from the crypt — where beauty bleeds black</em></p>
+    <a href="#boutique" class="crypt-btn">Enter the Crypt</a>
   </header>
 
-  <div class="tagline">
-    Resurrected from the crypt — where beauty bleeds black
-  </div>
-
-  <a href="#">Enter the Crypt</a>
-
-  <div class="divider"></div>
-
-  <h2>Welcome to the Boutique</h2>
-  <p>
-    Hand-painted horrors, gothic treasures, and divine drama —
-    curated for the damned and the dreamy.
-  </p>
-
-  <div class="bloodline">
-    🕯 Dark aesthetics for haunted hearts.
-  </div>
+  <section id="boutique">
+    <h2>Welcome to the Boutique</h2>
+    <p>Hand-painted horrors, gothic treasures, and divine drama — curated for the damned and the dreamy.</p>
+    <p><span class="emoji">🕯️</span> Dark aesthetics for haunted hearts.</p>
+  </section>
 
   <footer>
-    © 2025 Goth Goodies by Hannah’s Hippy & Horror. All sins reserved.
+    <p>© 2025 Goth Goodies by Hannah’s Hippy & Horror.<br>All sins reserved.</p>
   </footer>
+
 </body>
 </html>
