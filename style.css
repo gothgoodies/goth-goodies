@@ -1,83 +1,132 @@
-/* 🌫️ Goth Goodies by Hannah - Gothic Web Styles 🌫️ */
-
-/* General Reset + Font */
 body {
-  margin: 0;
-  font-family: 'Cormorant Garamond', serif;
-  background: #0e0e0e url('https://www.transparenttextures.com/patterns/dark-fog.png') repeat;
-  color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  font-family: 'Cinzel', serif;
+  background: url('https://i.imgur.com/kN0QaeL.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #f1f1f1;
 }
 
-/* Header Banner */
 header {
-  background: rgba(0, 0, 0, 0.85);
-  padding: 50px 20px 30px;
-  text-align: center;
-  border-bottom: 1px solid #444;
+  text-align: center;
+  padding: 40px 20px 10px;
+  background: rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid #fff;
 }
 
-header h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-  letter-spacing: 2px;
-  color: #e6e6e6;
+h1 {
+  font-family: 'Faster One', cursive;
+  font-size: 3rem;
+  color: crimson;
+  margin: 0;
 }
 
-header .tagline {
-  font-style: italic;
-  font-size: 1.3rem;
-  color: #999;
+.tagline {
+  font-size: 1.2rem;
+  font-style: italic;
 }
 
-/* Section Layout */
+nav {
+  background: rgba(0, 0, 0, 0.8);
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #444;
+  text-align: center;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #f1f1f1;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+  color: crimson;
+}
+
 section {
-  padding: 40px 10%;
-  max-width: 1200px;
-  margin: auto;
-  background-color: rgba(18, 18, 18, 0.9);
-  border-top: 1px solid #222;
-  border-bottom: 1px solid #222;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.7);
+  margin: 30px auto;
+  width: 85%;
+  max-width: 900px;
+  border: 1px solid #333;
+  border-radius: 10px;
 }
 
-/* Product Gallery Base */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-  margin-top: 40px;
+h2 {
+  border-bottom: 2px solid crimson;
+  padding-bottom: 5px;
 }
 
-.gallery img {
-  max-width: 220px;
-  border: 1px solid #444;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+ul {
+  list-style: square;
+  margin-left: 20px;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  font-size: 0.9rem;
-  padding: 30px 20px;
-  background: #000;
-  border-top: 1px solid #333;
-  color: #666;
+.logo-img {
+  display: block;
+  margin: 0 auto 30px;
+  max-width: 300px;
+  border: 2px solid #fff;
+  border-radius: 8px;
 }
 
-/* Beetlejuice Stripe Element */
-.stripes {
-  background: repeating-linear-gradient(
-    45deg,
-    #111,
-    #111 10px,
-    #f5f5f5 10px,
-    #f5f5f5 20px
-  );
-  padding: 20px;
-  margin-top: 40px;
-  color: #000;
-  font-weight: bold;
-  text-align: center;
-  font-size: 1.5rem;
+/* Sinful Sanctum Pop-up */
+#popup {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.95);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
 }
+
+.popup-box {
+  background: #111;
+  padding: 40px;
+  border: 1px solid crimson;
+  text-align: center;
+  max-width: 400px;
+  color: #eee;
+}
+
+.popup-box input {
+  padding: 10px;
+  margin-top: 15px;
+  width: 80%;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+
+.popup-box button {
+  margin-top: 15px;
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.popup-box button:hover {
+  background: #a30000;
+}
+
+
+On Wed, Aug 6, 2025 at 4:38 AM, mavis morningstar <owlsbroom@proton.me> wrote:
