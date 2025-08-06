@@ -1,1 +1,83 @@
+/* 🌫️ Goth Goodies by Hannah - Gothic Web Styles 🌫️ */
 
+/* General Reset + Font */
+body {
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+  background: #0e0e0e url('https://www.transparenttextures.com/patterns/dark-fog.png') repeat;
+  color: #f2f2f2;
+}
+
+/* Header Banner */
+header {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 50px 20px 30px;
+  text-align: center;
+  border-bottom: 1px solid #444;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  color: #e6e6e6;
+}
+
+header .tagline {
+  font-style: italic;
+  font-size: 1.3rem;
+  color: #999;
+}
+
+/* Section Layout */
+section {
+  padding: 40px 10%;
+  max-width: 1200px;
+  margin: auto;
+  background-color: rgba(18, 18, 18, 0.9);
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
+}
+
+/* Product Gallery Base */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.gallery img {
+  max-width: 220px;
+  border: 1px solid #444;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 30px 20px;
+  background: #000;
+  border-top: 1px solid #333;
+  color: #666;
+}
+
+/* Beetlejuice Stripe Element */
+.stripes {
+  background: repeating-linear-gradient(
+    45deg,
+    #111,
+    #111 10px,
+    #f5f5f5 10px,
+    #f5f5f5 20px
+  );
+  padding: 20px;
+  margin-top: 40px;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5rem;
+}
