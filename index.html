@@ -1,24 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Goth Goodies by Hannah</title>
-  <link href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Faster+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <header>
     <h1>Goth Goodies by Hannah</h1>
     <p class="tagline">Handmade Art, Lore & Gothic Delights</p>
   </header>
 
-  <section class="about">
+  <section class="hero-banner">
+    <img src="images/logo.png" alt="Goth Goodies Logo" />
+  </section>
+
+  <section class="about" id="about">
+    <h2>The Man Behind The Mask</h2>
+    <p>I’ve loved art since I was just a girl (not a vamp yet). One of my earliest pieces was inspired by Andy Warhol, featuring a viola I played in elementary school. Each square had color opposites — like I knew balance in chaos even back then. This piece was created for the Mary Hoard Art Museum.</p>
     <img src="images/warhol-viola.jpeg" alt="Young Artist's Viola Warhol Painting">
-    <p>I've loved art since I was just a girl (not a vamp yet). This piece was created for an event at the Mary Hoard Art Museum when I was in elementary school. It was inspired by Andy Warhol’s style and featured my viola – each square a unique color pairing based on opposites on the color wheel.</p>
+    <p>I also used to work at <strong>Skully’s Terror Haunted House</strong> (Jefferson County Fairgrounds) every October in 2022 & 2023 — first as a clown in the blacklight room, then as a hidden skeleton behind cages. Haunted history runs deep in my bones.</p>
+  </section>
+
+  <section class="sacred" id="sacred">
+    <button onclick="openPopup()">Sacred (21+)</button>
+    <div id="popup" class="popup">
+      <h3>☠️ Warning, Goblin: 21+ Only</h3>
+      <p>This section contains sinful creations meant for adult consumption only. To enter the Sinful Sanctum, verify your email:</p>
+      <input type="email" id="emailInput" placeholder="Enter your email" />
+      <button onclick="submitEmail()">Enter Sinful Sanctum</button>
+    </div>
+  </section>
+
+  <section class="products" id="gallery">
+    <h2>Product Gallery</h2>
+
+    <h3>🍰 Baking</h3>
+    <ul>
+      <li>Banana Bread</li>
+      <li>Carrot Cake</li>
+      <li>Zucchini Bread</li>
+      <li>Blueberry Pie</li>
+      <li>Blackberry Pie</li>
+      <li>Lemon Pie</li>
+      <li>Chocolate Pie</li>
+      <li>Birthday Cakes</li>
+      <li>Peanut Butter Bars</li>
+      <li>Peanut Butter Cookies</li>
+      <li>Chocolate Chip Cookies</li>
+      <li>Brownies</li>
+      <li>Cake Pops</li>
+      <li>Muffins</li>
+    </ul>
+
+    <h3>🎨 Canvas Art</h3>
+    <ul>
+      <li>Portraits</li>
+      <li>Prints</li>
+      <li>Photography</li>
+      <li>Realism</li>
+      <li>Cartoon</li>
+      <li>Memorial</li>
+      <li>Splatter Paint</li>
+      <li>3x3" to 11x13" Sizes</li>
+    </ul>
+
+    <h3>🧷 Jewelry</h3>
+    <ul>
+      <li>Beaded Earrings</li>
+      <li>Bracelets & Necklaces ($2–$3)</li>
+      <li>Charms, Car Accessories</li>
+      <li>Metal Jewelry</li>
+    </ul>
+
+    <h3>🧼 Perfumes</h3>
+    <p>Every scent is built on a base of lore. Photos of scent bases included in product listings.</p>
+
+    <h3>🪞 Other Goth Goodies</h3>
+    <ul>
+      <li>Digital Art</li>
+      <li>Tattoo Design</li>
+      <li>Signs</li>
+      <li>Clocks (incl. Bloody Domino Clock)</li>
+      <li>Bookmarks</li>
+      <li>Throw Pillows</li>
+      <li>Tie Dye</li>
+      <li>Calligraphy</li>
+      <li>Birthday Cards</li>
+      <li>Painted Lighters</li>
+      <li>Custom Shoes</li>
+    </ul>
+
+    <h3>🎃 Stickers</h3>
+    <ul>
+      <li>Horror</li>
+      <li>Nature</li>
+      <li>Music</li>
+      <li>Goth</li>
+      <li>Pop</li>
+      <li>Holiday Packs (5 or 10 pcs)</li>
+    </ul>
+  </section>
+
+  <section class="gallery">
+    <h2>📸 Lore & Chaos Gallery</h2>
+    <p>More images coming soon — the chaos is still uploading.</p>
+    <!-- Sample images -->
+    <img src="images/coffin-shelf.jpg" alt="Hand-painted Coffin Shelf" />
+    <img src="images/perfume-bases.jpg" alt="Perfume Base Scents" />
+    <img src="images/custom-shoes.jpg" alt="Custom Painted Shoes" />
   </section>
 
   <footer>
-    <p>Website by the Goth Goodies Goddess 🦇</p>
+    <p>Website handcrafted with blood, sweat, & sparkles by the Goth Goodies Goddess 🕯️</p>
   </footer>
+
+  <script>
+    function openPopup() {
+      document.getElementById("popup").style.display = "block";
+    }
+
+    function submitEmail() {
+      const email = document.getElementById("emailInput").value;
+      if (!email.includes('@')) {
+        alert("Enter a valid email, ghoul.");
+        return;
+      }
+
+      fetch("mailto:owlsbroom@proton.me?subject=Sinful Sanctum Access&body=" + encodeURIComponent(email))
+      .then(() => {
+        alert("Email submitted. Welcome to the Sinful Sanctum.");
+        document.getElementById("popup").style.display = "none";
+      }).catch(() => {
+        alert("Couldn’t submit. Try again or email manually: owlsbroom@proton.me");
+      });
+    }
+  </script>
+
 </body>
 </html>
