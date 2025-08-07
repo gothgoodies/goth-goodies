@@ -33,7 +33,7 @@ body {
 }
 
 /* ==== Logo Sizing ==== */
-.logo {
+#logo {
   max-width: 300px;
   display: block;
   margin: 30px auto;
