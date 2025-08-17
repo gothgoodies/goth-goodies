@@ -59,8 +59,8 @@
     <label for="product">Choose a Product:</label><br>
     <select id="product" name="product" required>
       <option value="">-- Select --</option>
-      <option value="bracelet">Bracelet</option>
-      <option value="necklace">Necklace</option>
+      <option value="bracelet">Bracelet ($3)</option>
+      <option value="necklace">Necklace ($3)</option>
       <option value="earrings">Earrings</option>
       <option value="canvas">Canvas Art</option>
       <option value="stickers">Sticker Pack</option>
@@ -77,7 +77,36 @@
       <option value="dandelion doom">Dandelion Doom</option>
       <option value="crybaby blue">Crybaby Blue</option>
       <option value="chaos core">Chaos Core</option>
-      <!-- keep adding all your colors here -->
+      <option value="graveyard fog">Graveyard Fog</option>
+      <option value="phantom silver">Phantom Silver</option>
+      <option value="toxic envy">Toxic Envy</option>
+      <option value="violet venom">Violet Venom</option>
+      <option value="jack-o-glow">Jack-O-Glow</option>
+      <option value="shadow realm">Shadow Realm</option>
+      <option value="pumpkin rot">Pumpkin Rot</option>
+      <option value="moonlit pearl">Moonlit Pearl</option>
+      <option value="ghoul green">Ghoul Green</option>
+      <option value="batwing black">Batwing Black</option>
+      <option value="necrotic purple">Necrotic Purple</option>
+      <option value="ashen bone">Ashen Bone</option>
+      <option value="witchfire">Witchfire</option>
+      <option value="haunted amber">Haunted Amber</option>
+      <option value="moss crypt">Moss Crypt</option>
+      <option value="raven feather">Raven Feather</option>
+      <option value="spectral ice">Spectral Ice</option>
+      <option value="vampire’s kiss">Vampire’s Kiss</option>
+      <option value="rotting rose">Rotting Rose</option>
+      <option value="grave moss">Grave Moss</option>
+      <option value="ember glow">Ember Glow</option>
+      <option value="cemetery dusk">Cemetery Dusk</option>
+      <option value="decay teal">Decay Teal</option>
+      <option value="shattered glass">Shattered Glass</option>
+      <option value="bloody quartz">Bloody Quartz</option>
+      <option value="serpent’s eye">Serpent’s Eye</option>
+      <option value="funeral frost">Funeral Frost</option>
+      <option value="pumpkin scream">Pumpkin Scream</option>
+      <option value="midnight haze">Midnight Haze</option>
+      <option value="storm drain">Storm Drain</option>
       <option value="custom">Other / Custom Mix</option>
     </select><br><br>
 
@@ -102,6 +131,18 @@
   <p>💀 After submitting your order, please send payment to:<br>
   <strong>CashApp: <a href="https://cash.app/$dankzomBie" target="_blank">$dankzomBie</a></strong></p>
 </section>
+
+<script>
+  function toggleCustomColor(value) {
+    const customBox = document.getElementById('customColorBox');
+    if (value === 'custom') {
+      customBox.style.display = 'block';
+    } else {
+      customBox.style.display = 'none';
+    }
+  }
+</script>
+
 
 <script>
   function toggleCustomColor(value) {
