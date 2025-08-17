@@ -347,3 +347,62 @@ img{ max-width:100%; height:auto; display:block; }
   color: #aaa;
   font-style: italic;
 }
+
+/* 🕸 Connect Section */
+#connect {
+  background: rgba(15, 15, 15, 0.85);
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #000;
+  text-align: center;
+}
+
+#connect h2 {
+  font-family: 'Sepian', sans-serif;
+  font-size: 2em;
+  color: #e6e6e6;
+  margin-bottom: 10px;
+}
+
+#connect .intro {
+  color: #aaa;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.connect-links a,
+.connect-links p {
+  display: block;
+  margin: 6px 0;
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.connect-links a:hover {
+  color: #990000;
+}
+
+.connect-gaming h3 {
+  margin-top: 25px;
+  color: #e6e6e6;
+}
+
+.connect-gaming ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 20px;
+}
+
+.connect-gaming li {
+  margin: 6px 0;
+  color: #ccc;
+}
+
+#connect .location {
+  margin-top: 15px;
+  color: #999;
+  font-size: 0.95em;
+}
