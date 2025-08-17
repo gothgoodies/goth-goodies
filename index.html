@@ -1,217 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Goth Goodies by Hannah’s Hippy & Horror</title>
-
-  <!-- STYLES -->
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- If you have webfont files, keep these @font-face rules in style.css and ensure files exist in /fonts -->
-  <!-- Fallback note: if your custom fonts aren’t loaded yet, the site will use serif fonts safely. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goth Goodies Orders</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <section id="order">
+    <h2>Place Your Order</h2>
+    <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
 
-  <!-- ====== HEADER ====== -->
-  <header class="hero">
-    <div class="hero-inner">
-      <h1 class="site-title">Goth Goodies</h1>
-      <p class="tagline">hand-made chaos, elegant & a little cursed</p>
-    </div>
-  </header>
+      <!-- Name -->
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
 
-  <!-- ====== NAV ====== -->
-  <nav class="top-nav">
-    <ul>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#order">Order</a></li>
-      <li><a href="#fangs">Hall of Fangs</a></li>
-      <li><a href="#connect">Connect</a></li>
-    </ul>
-  </nav>
+      <!-- Email -->
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
 
-  <!-- ====== GALLERY ====== -->
-  <section id="gallery" class="card">
-    <h2 class="section-title">Goth Goodies Gallery</h2>
-    <p>Browse the vibes. (More being added as the moon demands.)</p>
-    <!-- Put your existing product images here if you’d like -->
-    <div class="gallery-grid">
-      <!-- example placeholders -->
-      <!-- <figure class="product"><img src="images/example1.jpg" alt=""><figcaption>Example</figcaption></figure> -->
-    </div>
+      <!-- Product Type -->
+      <label for="product">Choose a Product:</label>
+      <select id="product" name="product" required>
+        <option value="">-- Select --</option>
+        <option value="bracelet">Bracelet</option>
+        <option value="necklace">Necklace</option>
+        <option value="earrings">Earrings</option>
+        <option value="canvas">Canvas Art</option>
+        <option value="stickers">Sticker Pack</option>
+        <option value="other">Other (describe below)</option>
+      </select>
+
+      <!-- Bead Colors -->
+      <label for="bead">Choose Bead Color (if jewelry):</label>
+      <select id="bead" name="bead">
+        <option value="">-- Select --</option>
+        <option value="witch's gold">witch's gold</option>
+        <option value="bone dust">bone dust</option>
+        <option value="hexberry">hexberry</option>
+        <option value="blood moon">blood moon</option>
+        <option value="witch wine">witch wine</option>
+        <option value="pumpkin guts">pumpkin guts</option>
+        <option value="coffin bronze">coffin bronze</option>
+        <option value="nocturne">nocturne</option>
+        <option value="dandelion doom">dandelion doom</option>
+        <option value="serpent sop">serpent sop</option>
+        <option value="venom Ivy">venom Ivy</option>
+        <option value="rotting garden">rotting garden</option>
+        <option value="haunted metal">haunted metal</option>
+        <option value="Jack-o'-lantern">Jack-o'-lantern</option>
+        <option value="poison lvy">poison lvy</option>
+        <option value="forbidden leaves">forbidden leaves</option>
+        <option value="frostbite">frostbite</option>
+        <option value="crybaby blue">crybaby blue</option>
+        <option value="mummified chains">mummified chains</option>
+        <option value="chaos core">chaos core</option>
+        <option value="ocean's mourning">ocean's mourning</option>
+        <option value="depths ó the sea">depths ó the sea</option>
+        <option value="possessed mermaid">possessed mermaid</option>
+        <option value="sickly sweet bubblegum">sickly sweet bubblegum</option>
+      </select>
+
+      <!-- Size -->
+      <label for="size">Size (if applicable):</label>
+      <input type="text" id="size" name="size" placeholder="e.g. small, medium, 6-inch">
+
+      <!-- Custom Notes -->
+      <label for="notes">Custom Notes:</label>
+      <textarea id="notes" name="notes" rows="4" placeholder="Add details like charm type, color mix, or custom text"></textarea>
+
+      <!-- Submit -->
+      <input type="submit" value="Submit Order">
+    </form>
+
+    <p class="payment-note">
+      💀 After submitting your order, please send your payment to:<br>
+      <strong>CashApp: <a href="https://cash.app/$dankzomBie" target="_blank">$dankzomBie</a></strong>
+    </p>
   </section>
-
-  <!-- ====== ORDER FORM ====== -->
-<section id="order">
-  <h2>Place Your Order</h2>
-  <form action="mailto:owlsbroom@proton.me" method="post" enctype="text/plain">
-
-    <!-- Name -->
-    <label for="name">Your Name:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
-
-    <!-- Email -->
-    <label for="email">Your Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
-
-    <!-- Product Type -->
-    <label for="product">Choose a Product:</label><br>
-    <select id="product" name="product" required>
-      <option value="">-- Select --</option>
-      <option value="bracelet">Bracelet ($3)</option>
-      <option value="necklace">Necklace ($3)</option>
-      <option value="earrings">Earrings</option>
-      <option value="canvas">Canvas Art</option>
-      <option value="stickers">Sticker Pack</option>
-      <option value="other">Other (describe below)</option>
-    </select><br><br>
-
-    <!-- Bead Colors -->
-    <label for="bead">Choose Bead Color (if jewelry):</label><br>
-    <select id="bead" name="bead" onchange="toggleCustomColor(this.value)">
-      <option value="">-- Select --</option>
-      <option value="coffin bronze">Coffin Bronze</option>
-      <option value="witch’s gold">Witch’s Gold</option>
-      <option value="blood moon">Blood Moon</option>
-      <option value="dandelion doom">Dandelion Doom</option>
-      <option value="crybaby blue">Crybaby Blue</option>
-      <option value="chaos core">Chaos Core</option>
-      <option value="graveyard fog">Graveyard Fog</option>
-      <option value="phantom silver">Phantom Silver</option>
-      <option value="toxic envy">Toxic Envy</option>
-      <option value="violet venom">Violet Venom</option>
-      <option value="jack-o-glow">Jack-O-Glow</option>
-      <option value="shadow realm">Shadow Realm</option>
-      <option value="pumpkin rot">Pumpkin Rot</option>
-      <option value="moonlit pearl">Moonlit Pearl</option>
-      <option value="ghoul green">Ghoul Green</option>
-      <option value="batwing black">Batwing Black</option>
-      <option value="necrotic purple">Necrotic Purple</option>
-      <option value="ashen bone">Ashen Bone</option>
-      <option value="witchfire">Witchfire</option>
-      <option value="haunted amber">Haunted Amber</option>
-      <option value="moss crypt">Moss Crypt</option>
-      <option value="raven feather">Raven Feather</option>
-      <option value="spectral ice">Spectral Ice</option>
-      <option value="vampire’s kiss">Vampire’s Kiss</option>
-      <option value="rotting rose">Rotting Rose</option>
-      <option value="grave moss">Grave Moss</option>
-      <option value="ember glow">Ember Glow</option>
-      <option value="cemetery dusk">Cemetery Dusk</option>
-      <option value="decay teal">Decay Teal</option>
-      <option value="shattered glass">Shattered Glass</option>
-      <option value="bloody quartz">Bloody Quartz</option>
-      <option value="serpent’s eye">Serpent’s Eye</option>
-      <option value="funeral frost">Funeral Frost</option>
-      <option value="pumpkin scream">Pumpkin Scream</option>
-      <option value="midnight haze">Midnight Haze</option>
-      <option value="storm drain">Storm Drain</option>
-      <option value="custom">Other / Custom Mix</option>
-    </select><br><br>
-
-    <!-- Custom Color Textbox (hidden until "custom" is chosen) -->
-    <div id="customColorBox" style="display:none;">
-      <label for="customColor">Custom Color / Mix:</label><br>
-      <input type="text" id="customColor" name="customColor" placeholder="Describe your mix">
-    </div><br>
-
-    <!-- Size -->
-    <label for="size">Size (if applicable):</label><br>
-    <input type="text" id="size" name="size" placeholder="e.g. small, medium, 6-inch"><br><br>
-
-    <!-- Custom Notes -->
-    <label for="notes">Custom Notes:</label><br>
-    <textarea id="notes" name="notes" rows="4" placeholder="Add details like charm type, multiple colors, or special requests"></textarea><br><br>
-
-    <!-- Submit -->
-    <input type="submit" value="Submit Order">
-  </form>
-
-  <p>💀 After submitting your order, please send payment to:<br>
-  <strong>CashApp: <a href="https://cash.app/$dankzomBie" target="_blank">$dankzomBie</a></strong></p>
-</section>
-
-<script>
-  function toggleCustomColor(value) {
-    const customBox = document.getElementById('customColorBox');
-    if (value === 'custom') {
-      customBox.style.display = 'block';
-    } else {
-      customBox.style.display = 'none';
-    }
-  }
-</script>
-
-
-<script>
-  function toggleCustomColor(value) {
-    const customBox = document.getElementById('customColorBox');
-    if (value === 'custom') {
-      customBox.style.display = 'block';
-    } else {
-      customBox.style.display = 'none';
-    }
-  }
-</script>
-
-  <!-- ====== HALL OF FANGS ====== -->
-  <section id="fangs" class="card">
-    <h2 class="section-title">Hall of Fangs (Showcase)</h2>
-    <div class="fangs-grid">
-      <figure class="fangs-item">
-        <img src="images/TVDcanvas.jpg" alt="TVD Canvas" />
-        <figcaption>TVD Canvas</figcaption>
-      </figure>
-      <figure class="fangs-item">
-        <img src="images/motionless.jpg" alt="Motionless in White piece" />
-        <figcaption>Motionless in White</figcaption>
-      </figure>
-      <figure class="fangs-item">
-        <img src="images/johnnie.jpg" alt="Johnnie Guilbert piece" />
-        <figcaption>Johnnie Guilbert</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <!-- ====== CONNECT / SOCIALS ====== -->
-  <footer id="connect" class="card footer-card">
-    <h2 class="section-title">Connect</h2>
-    <ul class="socials">
-      <!-- Replace # with your real links -->
-      <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
-      <li><a href="#" target="_blank" rel="noopener">TikTok</a></li>
-      <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
-      <li><a href="#" target="_blank" rel="noopener">Email</a></li>
-    </ul>
-    <p class="copyright">© <span id="year"></span> Goth Goodies. All rights reserved.</p>
-  </footer>
-
-  <!-- ====== SMALL JS (no build tools) ====== -->
-  <script>
-    // Smooth scroll for same-page links
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', function(e){
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          e.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      });
-    });
-
-    // Toggle Custom Mix field
-    const beadSel = document.getElementById('bead');
-    const customWrap = document.getElementById('customMixWrap');
-    if (beadSel) {
-      beadSel.addEventListener('change', () => {
-        customWrap.classList.toggle('hidden', beadSel.value !== 'custom-mix');
-      });
-    }
-
-    // Current year
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
-
