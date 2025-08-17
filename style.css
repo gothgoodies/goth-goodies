@@ -1,5 +1,6 @@
 .site-title {
-  font-family: 'Clockwork Sans', sans-serif;
+  font-family: 'Clockwork Sans' Sepian;
+  background-image: url('images/ogog.jpg');
   font-size: 4rem;
   text-align: center;
   margin-top: 40px;
@@ -12,8 +13,8 @@
 body {
   background-color: #0a0a0a;
   color: #eaeaea;
-  font-family: 'Cinzel', serif;
-  background-image: url('images/foggy-bg.jpg'); /* optional, replace if needed */
+  font-family: 'Sepian';
+  background-image: url('images/bridge.jpg'); /* optional, replace if needed */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -23,7 +24,8 @@ body {
 
 /* ==== Clockwork Title ==== */
 .site-title {
-  font-family: 'Clockwork Sans', sans-serif;
+  font-family: 'Clockwork Sans' Sepian;
+  background-image: url('images/oginfamous.jpeg');
   font-size: 4rem;
   text-align: center;
   margin-top: 40px;
@@ -41,7 +43,7 @@ body {
 
 /* ==== Buttons ==== */
 button, .shop-button {
-  font-family: 'Clockwork Sans', sans-serif;
+  font-family: 'Clockwork Sans';
   background-color: #1a1a1a;
   color: #f1f1f1;
   padding: 10px 20px;
@@ -90,7 +92,7 @@ button:hover, .shop-button:hover {
 }
 
 .about h2 {
-  font-family: 'Clockwork Sans', sans-serif;
+  font-family: 'Clockwork Sans', Sepian;
   font-size: 2.5rem;
   margin-bottom: 20px;
   color: #fff;
@@ -113,7 +115,6 @@ button:hover, .shop-button:hover {
   box-shadow: 0 0 10px black;
 }
 
-On Wed, Aug 6, 2025 at 4:45 AM, mavis morningstar <owlsbroom@proton.me> wrote:
 }
 
 header {
@@ -236,6 +237,3 @@ ul {
 .popup-box button:hover {
   background: #a30000;
 }
-
-
-On Wed, Aug 6, 2025 at 4:38 AM, mavis morningstar <owlsbroom@proton.me> wrote:
