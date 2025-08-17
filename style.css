@@ -232,3 +232,64 @@ ul {
 .popup-box button:hover {
   background: #a30000;
 }
+
+/* 🦇 Order Form Styles */
+#order {
+  background: rgba(0,0,0,0.7);
+  padding: 20px;
+  margin: 40px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #000;
+}
+
+#order h2 {
+  font-family: 'Sepian', sans-serif;
+  text-align: center;
+  font-size: 2em;
+  color: #e6e6e6;
+  margin-bottom: 15px;
+}
+
+#order form {
+  display: flex;
+  flex-direction: column;
+}
+
+#order label {
+  margin: 10px 0 5px;
+  color: #ddd;
+}
+
+#order input,
+#order select,
+#order textarea {
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background: #222;
+  color: #fff;
+}
+
+#order button {
+  margin-top: 20px;
+  padding: 12px;
+  background: #660000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#order button:hover {
+  background: #990000;
+}
+
+.payment-note {
+  text-align: center;
+  margin-top: 20px;
+  color: #aaa;
+  font-style: italic;
+}
