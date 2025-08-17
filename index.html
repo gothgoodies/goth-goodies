@@ -6,60 +6,92 @@
   <title>Goth Goodies Orders</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <section id="order">
-    <h2>Place Your Order</h2>
-    <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+  
+<!-- 🦇 Order Form Section -->
+<section id="order">
+  <h2>Place Your Order</h2>
+  <form action="mailto:owlsbroom@proton.me" method="POST" enctype="text/plain">
+    <!-- Name -->
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required>
 
-      <!-- Name -->
-      <label for="name">Your Name:</label>
-      <input type="text" id="name" name="name" required>
+    <!-- Email -->
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" required>
 
-      <!-- Email -->
-      <label for="email">Your Email:</label>
-      <input type="email" id="email" name="email" required>
+    <!-- Product Type -->
+    <label for="product">Choose a Product:</label>
+    <select id="product" name="product" required>
+      <option value="">-- Select an item --</option>
+      <option value="bracelet">Bracelet</option>
+      <option value="necklace">Necklace</option>
+      <option value="earrings">Earrings</option>
+      <option value="custom_art">Custom Art</option>
+      <option value="sticker_pack">Sticker Pack</option>
+      <option value="baked_good">Baked Good</option>
+      <option value="other">Other</option>
+    </select>
 
-      <!-- Product Type -->
-      <label for="product">Choose a Product:</label>
-      <select id="product" name="product" required>
-        <option value="">-- Select --</option>
-        <option value="bracelet">Bracelet</option>
-        <option value="necklace">Necklace</option>
-        <option value="earrings">Earrings</option>
-        <option value="canvas">Canvas Art</option>
-        <option value="stickers">Sticker Pack</option>
-        <option value="other">Other (describe below)</option>
+    <!-- Bead Colors (shows only for jewelry) -->
+    <div id="beadColorsField" style="display:none;">
+      <label for="beadColor">Select Bead Color:</label>
+      <select id="beadColor" name="beadColor">
+        <option value="">-- Select a color --</option>
+        <option>witch's gold</option>
+        <option>bone dust</option>
+        <option>hexberry</option>
+        <option>blood moon</option>
+        <option>witch wine</option>
+        <option>pumpkin guts</option>
+        <option>coffin bronze</option>
+        <option>nocturne</option>
+        <option>dandelion doom</option>
+        <option>serpent sop</option>
+        <option>venom ivy</option>
+        <option>rotting garden</option>
+        <option>haunted metal</option>
+        <option>jack-o'-lantern</option>
+        <option>poison ivy</option>
+        <option>forbidden leaves</option>
+        <option>frostbite</option>
+        <option>crybaby blue</option>
+        <option>mummified chains</option>
+        <option>chaos core</option>
+        <option>ocean's mourning</option>
+        <option>depths ó the sea</option>
+        <option>possessed mermaid</option>
+        <option>sickly sweet bubblegum</option>
       </select>
+    </div>
 
-      <!-- Bead Colors -->
-      <label for="bead">Choose Bead Color (if jewelry):</label>
-      <select id="bead" name="bead">
-        <option value="">-- Select --</option>
-        <option value="witch's gold">witch's gold</option>
-        <option value="bone dust">bone dust</option>
-        <option value="hexberry">hexberry</option>
-        <option value="blood moon">blood moon</option>
-        <option value="witch wine">witch wine</option>
-        <option value="pumpkin guts">pumpkin guts</option>
-        <option value="coffin bronze">coffin bronze</option>
-        <option value="nocturne">nocturne</option>
-        <option value="dandelion doom">dandelion doom</option>
-        <option value="serpent sop">serpent sop</option>
-        <option value="venom Ivy">venom Ivy</option>
-        <option value="rotting garden">rotting garden</option>
-        <option value="haunted metal">haunted metal</option>
-        <option value="Jack-o'-lantern">Jack-o'-lantern</option>
-        <option value="poison lvy">poison lvy</option>
-        <option value="forbidden leaves">forbidden leaves</option>
-        <option value="frostbite">frostbite</option>
-        <option value="crybaby blue">crybaby blue</option>
-        <option value="mummified chains">mummified chains</option>
-        <option value="chaos core">chaos core</option>
-        <option value="ocean's mourning">ocean's mourning</option>
-        <option value="depths ó the sea">depths ó the sea</option>
-        <option value="possessed mermaid">possessed mermaid</option>
-        <option value="sickly sweet bubblegum">sickly sweet bubblegum</option>
-      </select>
+    <!-- Extra Details -->
+    <label for="details">Order Details (size, flavor, notes):</label>
+    <textarea id="details" name="details" rows="4"></textarea>
+
+    <!-- Submit -->
+    <button type="submit">Send Order</button>
+  </form>
+
+  <p class="payment-note">
+    🖤 After I confirm your order by email, please send payment via CashApp:<br>
+    <strong>$dankzomBie</strong>
+  </p>
+</section>
+
+<!-- 🦇 Script: Show/Hide Bead Colors -->
+<script>
+  const productSelect = document.getElementById("product");
+  const beadColorsField = document.getElementById("beadColorsField");
+
+  productSelect.addEventListener("change", function() {
+    const value = this.value;
+    if (value === "bracelet" || value === "necklace" || value === "earrings") {
+      beadColorsField.style.display = "block";
+    } else {
+      beadColorsField.style.display = "none";
+    }
+  });
+</script>
 
       <!-- Size -->
       <label for="size">Size (if applicable):</label>
