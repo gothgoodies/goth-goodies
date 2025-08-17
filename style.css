@@ -4,7 +4,7 @@
   font-size: 4rem;
   text-align: center;
   margin-top: 40px;
-  color: #f8f8f8;
+  color: #A89663;
   letter-spacing: 2px;
   text-shadow: 2px 2px 6px black;
 }
@@ -12,7 +12,7 @@
   /* ==== Base Gothic Styling ==== */
 body {
   background-color: #0a0a0a;
-  color: #eaeaea;
+  color: #E6EFBB;
   font-family: 'Sepian';
   background-image: url('images/bridge.jpeg'); /* optional, replace if needed */
   background-size: cover;
@@ -29,7 +29,7 @@ body {
   font-size: 4rem;
   text-align: center;
   margin-top: 40px;
-  color: #f8f8f8;
+  color: #A89663;
   letter-spacing: 2px;
   text-shadow: 2px 2px 6px black;
 }
@@ -45,7 +45,7 @@ body {
 button, .shop-button {
   font-family: 'Clockwork Sans';
   background-color: #1a1a1a;
-  color: #f1f1f1;
+  color: #A9157E;
   padding: 10px 20px;
   border: 1px solid #666;
   border-radius: 5px;
@@ -80,12 +80,12 @@ button:hover, .shop-button:hover {
 
 /* ==== About Me ==== */
 .about {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: A89663(0, 0, 0, 0.6);
   padding: 40px;
   max-width: 800px;
   margin: 60px auto;
   border-radius: 12px;
-  color: #f1f1f1;
+  color: #E6EFBB;
   font-size: 1rem;
   line-height: 1.6;
   box-shadow: 0 0 20px black;
