@@ -146,31 +146,34 @@ ul{ padding-left:18px; }
 }
 
 /* Order form */
+/* Order Form Gothic Theme */
 form {
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.85);
   padding: 20px;
   border: 1px solid #333;
   border-radius: 8px;
-  box-shadow: 0 0 15px #000;
+  box-shadow: 0 0 20px #000;
   max-width: 500px;
-  margin: 20px auto;
+  margin: 30px auto;
   text-align: left;
 }
 
 form label {
-  font-family: 'Clockwork Sans', sans-serif;
-  font-size: 1.1rem;
+  font-family: 'Sepian', sans-serif;
+  font-size: 1rem;
   color: #E6EFBB;
 }
 
-form input, form select, form textarea {
+form input,
+form select,
+form textarea {
   width: 100%;
   padding: 10px;
   margin-top: 5px;
   margin-bottom: 15px;
   border: 1px solid #555;
   border-radius: 5px;
-  background: #1a1a1a;
+  background: #111;
   color: #E6EFBB;
 }
 
@@ -188,10 +191,17 @@ form input[type="submit"]:hover {
 }
 
 #order h2 {
-  font-family: 'Sepian', sans-serif;
+  font-family: 'Clockwork Sans', sans-serif;
   text-align: center;
   color: #A9157E;
   margin-bottom: 20px;
+}
+
+#order p {
+  text-align: center;
+  margin-top: 15px;
+  color: #E6EFBB;
+  font-family: 'Clockwork Sans', sans-serif;
 }
 
 /* Footer / socials */
