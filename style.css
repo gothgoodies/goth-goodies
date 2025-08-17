@@ -144,6 +144,74 @@ ul{ padding-left:18px; }
   border:2px solid #666;
   box-shadow: 2px 2px 10px #000;
 }
+body {
+  background: #0b0b0b;
+  color: #E6EFBB;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#order {
+  max-width: 600px;
+  margin: 50px auto;
+  background: rgba(20, 20, 20, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 25px black;
+}
+
+form {
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background: #1a1a1a;
+  color: #E6EFBB;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  background: #A9157E;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  background: #333;
+  color: #fff;
+}
+
+.payment-note {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #aaa;
+}
 
 /* Order form */
 /* Order Form Gothic Theme */
