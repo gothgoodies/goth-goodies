@@ -42,105 +42,6 @@
     </div>
   </section>
 
-  <!-- ====== ORDER FORM ====== -->
-  <section id="order" class="card">
-    <h2 class="section-title">Place Your Order</h2>
-    <p class="note">Bracelets are <strong>$3</strong>. Necklaces/chokers are <strong>$3</strong>. Custom pieces priced on request.</p>
-
-    <form action="mailto:owlsbroom@proton.me" method="post" enctype="text/plain" id="orderForm">
-      <!-- Contact -->
-      <label for="name">Your Name</label>
-      <input type="text" id="name" name="Name" required />
-
-      <label for="email">Email (for confirmation)</label>
-      <input type="email" id="email" name="Email" required />
-
-      <!-- Product Details -->
-      <label for="product">Product</label>
-      <select id="product" name="Product" required>
-        <option value="">— Select —</option>
-        <option value="bracelet">Bracelet</option>
-        <option value="necklace">Necklace</option>
-        <option value="earrings">Earrings</option>
-        <option value="sticker-pack">Sticker Pack</option>
-        <option value="canvas-art">Canvas Art</option>
-        <option value="other">Other (describe below)</option>
-      </select>
-
-      <!-- Jewelry options -->
-      <div class="jewelry-options">
-        <label for="bead">Bead Color (jewelry)</label>
-        <select id="bead" name="Bead Color">
-          <option value="">— Select —</option>
-          <option>witch's gold</option>
-          <option>bone dust</option>
-          <option>hexberry</option>
-          <option>blood moon</option>
-          <option>witch wine</option>
-          <option>pumpkin guts</option>
-          <option>coffin bronze</option>
-          <option>nocturne</option>
-          <option>dandelion doom</option>
-          <option>serpent sap</option>
-          <option>venom ivy</option>
-          <option>rotting garden</option>
-          <option>haunted metal</option>
-          <option>jack o' lantern</option>
-          <option>poison ivy</option>
-          <option>forbidden leaves</option>
-          <option>frostbite</option>
-          <option>crybaby blue</option>
-          <option>mummified chains</option>
-          <option>chaos core</option>
-          <option>ocean's mourning</option>
-          <option>depths o' the sea</option>
-          <option>possessed mermaid</option>
-          <option>sickly sweet bubblegum</option>
-          <option value="custom-mix">Custom Mix…</option>
-        </select>
-
-        <!-- bead palette visual -->
-        <figure class="palette">
-          <img src="images/bead-palette.jpg" alt="Bead color palette preview" />
-          <figcaption>Pick a color name above. (Photo for reference.)</figcaption>
-        </figure>
-
-        <!-- pop-up / reveal for Custom Mix -->
-        <div id="customMixWrap" class="hidden">
-          <label for="customMix">Describe your Custom Mix</label>
-          <textarea id="customMix" name="Custom Mix" rows="3" placeholder="e.g., blood moon + hexberry + bone dust (70/20/10)"></textarea>
-        </div>
-
-        <!-- Size -->
-        <label for="size">Size</label>
-        <input type="text" id="size" name="Size" placeholder="e.g., 6.0 in bracelet, 14 in choker" />
-
-        <!-- Charm options (optional) -->
-        <fieldset class="charms">
-          <legend>Charms (optional)</legend>
-          <label><input type="checkbox" name="Charms" value="solid cross" /> solid cross</label>
-          <label><input type="checkbox" name="Charms" value="hollow cross" /> hollow cross</label>
-          <label><input type="checkbox" name="Charms" value="flared cross" /> flared cross</label>
-          <label><input type="checkbox" name="Charms" value="rounded cross" /> rounded cross</label>
-          <label><input type="checkbox" name="Charms" value="big square black stone" /> big square black stone</label>
-          <label><input type="checkbox" name="Charms" value="big black stone" /> big black stone</label>
-          <label><input type="checkbox" name="Charms" value="crystal" /> crystal</label>
-          <label><input type="checkbox" name="Charms" value="multi color chaos" /> multi color chaos</label>
-        </fieldset>
-      </div>
-
-      <!-- Notes -->
-      <label for="notes">Notes / Special Requests</label>
-      <textarea id="notes" name="Notes" rows="4" placeholder="Anything else I should know? Deadline, wrist size, gift wrap, etc."></textarea>
-
-      <!-- Submit + CashApp -->
-      <input type="submit" value="Submit Order" class="shop-button" />
-      <p class="pay-note">After submitting your order, send payment to
-        <a href="https://cash.app/$YourCashtag" target="_blank"><strong>$YourCashtag</strong></a>
-        and include your name in the memo.</p>
-    </form>
-  </section>
-
   <!-- ====== HALL OF FANGS ====== -->
   <section id="fangs" class="card">
     <h2 class="section-title">Hall of Fangs (Showcase)</h2>
@@ -159,19 +60,6 @@
       </figure>
     </div>
   </section>
-
-  <!-- ====== CONNECT / SOCIALS ====== -->
-  <footer id="connect" class="card footer-card">
-    <h2 class="section-title">Connect</h2>
-    <ul class="socials">
-      <!-- Replace # with your real links -->
-      <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
-      <li><a href="#" target="_blank" rel="noopener">TikTok</a></li>
-      <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
-      <li><a href="#" target="_blank" rel="noopener">Email</a></li>
-    </ul>
-    <p class="copyright">© <span id="year"></span> Goth Goodies. All rights reserved.</p>
-  </footer>
 
   <!-- ====== SMALL JS (no build tools) ====== -->
   <script>
