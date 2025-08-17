@@ -23,6 +23,92 @@
       <li><a href="#about">The Man Behind The Mask</a></li>
     </ul>
   </nav>
+
+  <!-- 🦇 Order Form Section🦇 -->
+<section id="order">
+  <h2>Place Your Order</h2>
+  <form action="mailto:owlsbroom@proton.me" method="POST" enctype="text/plain">
+    <!-- Name -->
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <!-- Email -->
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <!-- Product Type -->
+    <label for="product">Choose a Product:</label>
+    <select id="product" name="product" required>
+      <option value="">-- Select an item --</option>
+      <option value="bracelet">Bracelet</option>
+      <option value="necklace">Necklace</option>
+      <option value="earrings">Earrings</option>
+      <option value="custom_art">Custom Art</option>
+      <option value="sticker_pack">Sticker Pack</option>
+      <option value="baked_good">Baked Good</option>
+      <option value="other">Other</option>
+    </select>
+
+    <!-- Bead Colors (shows only for jewelry) -->
+    <div id="beadColorsField" style="display:none;">
+      <label for="beadColor">Select Bead Color:</label>
+      <select id="beadColor" name="beadColor">
+        <option value="">-- Select a color --</option>
+        <option>witch's gold</option>
+        <option>bone dust</option>
+        <option>hexberry</option>
+        <option>blood moon</option>
+        <option>witch wine</option>
+        <option>pumpkin guts</option>
+        <option>coffin bronze</option>
+        <option>nocturne</option>
+        <option>dandelion doom</option>
+        <option>serpent sop</option>
+        <option>venom ivy</option>
+        <option>rotting garden</option>
+        <option>haunted metal</option>
+        <option>jack-o'-lantern</option>
+        <option>poison ivy</option>
+        <option>forbidden leaves</option>
+        <option>frostbite</option>
+        <option>crybaby blue</option>
+        <option>mummified chains</option>
+        <option>chaos core</option>
+        <option>ocean's mourning</option>
+        <option>depths ó the sea</option>
+        <option>possessed mermaid</option>
+        <option>sickly sweet bubblegum</option>
+      </select>
+    </div>
+
+    <!-- Extra Details -->
+    <label for="details">Order Details (size, flavor, notes):</label>
+    <textarea id="details" name="details" rows="4"></textarea>
+
+    <!-- Submit -->
+    <button type="submit">Send Order</button>
+  </form>
+
+  <p class="payment-note">
+    🖤 After I confirm your order by email, please send payment via CashApp:<br>
+    <strong>$dankzomBie</strong>
+  </p>
+</section>
+
+<!-- 🦇 Script: Show/Hide Bead Colors -->
+<script>
+  const productSelect = document.getElementById("product");
+  const beadColorsField = document.getElementById("beadColorsField");
+
+  productSelect.addEventListener("change", function() {
+    const value = this.value;
+    if (value === "bracelet" || value === "necklace" || value === "earrings") {
+      beadColorsField.style.display = "block";
+    } else {
+      beadColorsField.style.display = "none";
+    }
+  });
+</script>
   
 <section class="gallery">
   <h2>🕯️ Goth Goodies Gallery 🕯️</h2>
