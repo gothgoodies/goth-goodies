@@ -1,117 +1,130 @@
-/* General Reset */
-* {
+/* General reset */
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: black url('images/fog-texture.jpg') repeat;
+  font-family: 'Sepian', serif;
+  background: url("background.jpg") no-repeat center center fixed;
   background-size: cover;
-  color: #e6e6e6;
-  font-family: 'Cormorant Garamond', serif;
-  line-height: 1.6;
+  color: #f5f5f5;
   text-align: center;
 }
 
-/* Header */
-.site-header {
-  padding: 40px 20px;
-  background: rgba(0,0,0,0.9);
-  border-bottom: 2px solid #444;
+h1, h2, h3 {
+  font-family: 'Sepian', serif;
+  text-shadow: 2px 2px 6px black;
 }
 
-.logo {
-  width: 120px;
-  display: block;
-  margin: 0 auto 15px;
-}
-
-.site-header h1 {
-  font-family: 'Cinzel', serif;
-  font-size: 2.8em;
-  letter-spacing: 2px;
-}
-
-.tagline {
-  font-size: 1.1em;
-  font-style: italic;
-  color: #bbb;
-}
-
-/* Section Titles */
-.section-title {
-  font-family: 'Cinzel', serif;
-  font-size: 2.2em;
-  margin: 40px 0 20px;
-  letter-spacing: 2px;
-}
-
-/* Product Gallery */
-.gallery-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  margin: 0 auto;
-  max-width: 1100px;
-  padding: 20px;
-}
-
-.gallery-item {
-  background: rgba(20, 20, 20, 0.9);
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.7);
-  transition: transform 0.3s ease;
-}
-
-.gallery-item:hover {
-  transform: scale(1.03);
-}
-
-.gallery-item h3 {
-  font-family: 'Cinzel', serif;
+.clockwork {
+  font-family: 'Clockwork', cursive;
+  font-size: 2rem;
+  color: #b30000;
   margin-bottom: 10px;
 }
 
-.gallery-item p {
-  color: #ccc;
-  font-size: 0.95em;
-}
-
-/* Man Behind the Mask */
-.about-section {
-  padding: 60px 20px;
-  background: rgba(0,0,0,0.85);
-}
-
-.about-content {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  align-items: center;
-}
-
-.about-text {
-  max-width: 800px;
-  background: rgba(25,25,25,0.85);
-  padding: 20px 30px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.6);
-  text-align: left;
-}
-
-.about-text p {
-  font-size: 1em;
-  color: #ddd;
-  line-height: 1.6;
-}
-
-/* Footer */
-.site-footer {
+.site-header {
   padding: 20px;
-  background: rgba(0,0,0,0.95);
-  border-top: 2px solid #444;
-  font-size: 0.9em;
-  color: #888;
+}
+
+.header-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.site-title {
+  font-size: 2.8rem;
+}
+
+.tagline {
+  font-style: italic;
+  margin: 10px 0;
+}
+
+.small-logo {
+  width: 150px;
+  margin-top: 10px;
+}
+
+.products {
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.product-category {
+  background: rgba(0, 0, 0, 0.7);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.8);
+}
+
+.product-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.product-category li {
+  margin: 5px 0;
+}
+
+button {
+  background: #b30000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Clockwork', cursive;
+}
+
+button:hover {
+  background: #800000;
+}
+
+/* Order form */
+.order-form {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.form-content {
+  background: #111;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 500px;
+  color: #fff;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #fff;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  margin: 10px 0;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #222;
+  color: #fff;
+}
+
+footer {
+  background: rgba(0,0,0,0.8);
+  padding: 20px;
+  margin-top: 40px;
 }
