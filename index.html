@@ -3,98 +3,147 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Goth Goodies</title>
+  <title>Goth Goodies by Hannah</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/sepian" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/clockwork" rel="stylesheet">
+
 </head>
 <body>
 
   <!-- Header -->
   <header class="site-header">
-    <img src="images/logo.png" alt="Goth Goodies Logo" class="logo">
-    <h1>Goth Goodies</h1>
-    <p class="tagline">Dark Delights & Handmade Horrors</p>
+    <img src="header.jpg" alt="Goth Goodies Header" class="header-img">
+    <h1 class="site-title">Ghoulishly Grave Goodies</h1>
+    <p class="tagline">Blooms, Bats & Boutique – the heart and soul of an oddly extraordinary chaos</p>
+    <img src="logo.jpg" alt="Goth Goodies Logo" class="small-logo">
   </header>
 
-  <!-- Product Gallery -->
-  <main>
-    <section class="gallery">
-      <h2 class="section-title">The Chaos Tree of Goodies</h2>
-      <div class="gallery-container">
+  <!-- Product Sections -->
+  <main class="products">
 
-        <!-- Baking -->
-        <div class="gallery-item">
-          <h3>Baking</h3>
-          <p>Banana Bread, Carrot Cake, Zucchini Bread, Pies, Cookies, Brownies...</p>
-        </div>
-
-        <!-- Beads -->
-        <div class="gallery-item">
-          <h3>Beads</h3>
-          <p>Stone, Charm, Gothic, Chokers...</p>
-        </div>
-
-        <!-- Stickers -->
-        <div class="gallery-item">
-          <h3>Stickers</h3>
-          <p>Horror, Goth, Music, Pop, Holiday...</p>
-        </div>
-
-        <!-- Canvas Art -->
-        <div class="gallery-item">
-          <h3>Canvas Art</h3>
-          <p>Portraits, Splatter, Realism, Cartoon...</p>
-        </div>
-
-        <!-- Jewelry -->
-        <div class="gallery-item">
-          <h3>Jewelry</h3>
-          <p>Earrings, Necklaces, Bracelets...</p>
-        </div>
-
-        <!-- Other -->
-        <div class="gallery-item">
-          <h3>Other Creations</h3>
-          <p>Digital Art, Tattoos, Painted Lighters, Perfumes, Tie Dye...</p>
-        </div>
-      </div>
+    <!-- Wickedly Sweet Treats -->
+    <section class="product-category">
+      <h2 class="clockwork">Wickedly Sweet Treats</h2>
+      <p class="desc">Homemade gothic desserts, customizable to your cravings.</p>
+      <ul>
+        <li>Banana Bread</li>
+        <li>Birthday Cake or Cupcakes</li>
+        <li>Blackberry Pie</li>
+        <li>Blueberry Pie</li>
+        <li>Brownies</li>
+        <li>Cake Pops</li>
+        <li>Carrot Cake</li>
+        <li>Cheesecakes</li>
+        <li>Chocolate Chip Cookies</li>
+        <li>Chocolate Pie</li>
+        <li>Holiday Cookies</li>
+        <li>Lemon Bars</li>
+        <li>Muffins</li>
+        <li>Peanut Butter Cookies</li>
+        <li>Peanut Butter Bars</li>
+        <li>Pumpkin Bars</li>
+        <li>Pumpkin Pie</li>
+        <li>Sugar Cookies</li>
+      </ul>
+      <button onclick="openOrderForm('Wickedly Sweet Treats')">Order Now</button>
     </section>
 
-    <!-- Man Behind The Mask -->
-    <section id="about" class="about-section">
-      <h2 class="section-title">The Man Behind The Mask</h2>
-
-      <div class="about-content">
-        <!-- Childhood Gallery -->
-        <div class="gallery-container">
-          <div class="gallery-item">
-            <img src="images/child1.jpg" alt="Young Artist 1">
-            <p>First sketchbook, age 6</p>
-          </div>
-          <div class="gallery-item">
-            <img src="images/child2.jpg" alt="Young Artist 2">
-            <p>Art fair memories</p>
-          </div>
-          <div class="gallery-item">
-            <img src="images/child3.jpg" alt="Young Artist 3">
-            <p>Growing into the craft</p>
-          </div>
-        </div>
-
-        <!-- Text Box -->
-        <div class="about-text">
-          <p>
-            [ Write your story here. This is your stage to reveal the haunted halls that shaped the artist you became. Paste/edit text directly inside this box in the HTML file. ]
-          </p>
-        </div>
-      </div>
+    <!-- Beads Boutique -->
+    <section class="product-category">
+      <h2 class="clockwork">Beads Boutique</h2>
+      <p class="desc">Bracelets & necklaces with gothic-named bead colors. Fully customizable.</p>
+      <button onclick="openOrderForm('Beads Boutique')">Order Now</button>
     </section>
+
+    <!-- Sticker Booth -->
+    <section class="product-category">
+      <h2 class="clockwork">Sticker Booth</h2>
+      <p class="desc">Singles or packs (1–20). Themed for horror, plants, music, and more.</p>
+      <button onclick="openOrderForm('Sticker Booth')">Order Now</button>
+    </section>
+
+    <!-- Bone Cut Boulevard -->
+    <section class="product-category">
+      <h2 class="clockwork">Bone Cut Boulevard</h2>
+      <p class="desc">Paintings & photography — from realism to splatter to memorial pieces.</p>
+      <button onclick="openOrderForm('Bone Cut Boulevard')">Order Now</button>
+    </section>
+
+    <!-- Vamp Safe Metal -->
+    <section class="product-category">
+      <h2 class="clockwork">Vamp Safe Metal</h2>
+      <p class="desc">Jewelry for the damned — earrings, necklaces, charms.</p>
+      <button onclick="openOrderForm('Vamp Safe Metal')">Order Now</button>
+    </section>
+
+    <!-- Aphrodite Apparel -->
+    <section class="product-category">
+      <h2 class="clockwork">Aphrodite Apparel</h2>
+      <p class="desc">Tie-dye & custom-painted clothing, shoes, socks & more.</p>
+      <button onclick="openOrderForm('Aphrodite Apparel')">Order Now</button>
+    </section>
+
+    <!-- Fragrance Frenzy -->
+    <section class="product-category">
+      <h2 class="clockwork">Fragrance Frenzy</h2>
+      <p class="desc">Handcrafted perfumes (1oz) with essential oils.</p>
+      <button onclick="openOrderForm('Fragrance Frenzy')">Order Now</button>
+    </section>
+
+    <!-- Goth Goodies Grimmoire -->
+    <section class="product-category">
+      <h2 class="clockwork">Goth Goodies Grimmoire</h2>
+      <p class="desc">Other custom creations — tattoo designs, lighters, pillows, bookmarks, and more.</p>
+      <button onclick="openOrderForm('Goth Goodies Grimmoire')">Order Now</button>
+    </section>
+
   </main>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <p>&copy; 2025 Goth Goodies — All Rights Reserved</p>
+  <!-- Order Form Popup -->
+  <div id="orderForm" class="order-form">
+    <div class="form-content">
+      <span class="close" onclick="closeOrderForm()">&times;</span>
+      <h3 id="orderTitle">Order</h3>
+      <form>
+        <label for="details">Customization Details:</label>
+        <textarea id="details" name="details" placeholder="Write your order details here..."></textarea>
+        <button type="submit">Submit Order</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Man Behind the Mask -->
+  <section class="about">
+    <h2>The Man Behind the Mask</h2>
+    <p>[ Place your personal story here in this text box. ]</p>
+  </section>
+
+  <!-- Contact -->
+  <footer>
+    <h3>Contact Me</h3>
+    <p>Email: <a href="mailto:owlsbroom@proton.me">owlsbroom@proton.me</a></p>
+    <p>Phone: +1 920-728-8585 (Signal: mavismorningstar.22)</p>
+    <p>Instagram: <a href="https://instagram.com/gothgoodieshhh">@gothgoodieshhh</a></p>
+    <p>Facebook: <a href="https://www.facebook.com/share/1MFytBwxsJ/?mibextid=wwXlfr">Hannah MacLeod (Na)</a></p>
+    <p>PlayStation: mavismorningstar | Steam: r0tten_wasp | Twitch: LocalSalamander</p>
+    <p>Location: Quad Cities, Iowa</p>
+    <p>&copy; 2025 Goth Goodies</p>
   </footer>
+
+  <!-- Scripts -->
+  <script>
+    function openOrderForm(category) {
+      document.getElementById("orderForm").style.display = "block";
+      document.getElementById("orderTitle").innerText = "Order – " + category;
+    }
+    function closeOrderForm() {
+      document.getElementById("orderForm").style.display = "none";
+    }
+  </script>
 
 </body>
 </html>
