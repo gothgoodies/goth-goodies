@@ -1,408 +1,117 @@
-/* ========= FONTS ========= */
-/* Put your actual font file names in /fonts and keep these faces. */
-@font-face {
-  font-family: 'Clockwork';
-  src: url('fonts/Clockwork.woff2') format('woff2'),
-       url('fonts/Clockwork.woff') format('woff');
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Sepian';
-  src: url('fonts/Sepian.woff2') format('woff2'),
-       url('fonts/Sepian.woff') format('woff');
-  font-display: swap;
-}
-
-/* ========= ROOT / THEME ========= */
-:root{
-  --ink:#0a0a0a;
-  --parch:#E6EFBB;
-  --accent:#A9157E;
-  --gold:#A89663;
-  --crimson:crimson;
-  --panel: rgba(0,0,0,.72);
-  --line:#333;
-  --shadow: 0 0 24px rgba(0,0,0,.65);
-}
-
-/* ========= BASE ========= */
-*{ box-sizing:border-box; }
-html,body{ height:100%; }
-body{
-  margin:0;
-  color:var(--parch);
-  background:#000 url('images/bridge.jpg') center/cover fixed no-repeat;
-  font-family: 'Sepian', serif;
-}
-
-/* Cards (all main sections) */
-.card{
-  width:min(100%, 1000px);
-  margin:32px auto;
-  padding:28px;
-  background:var(--panel);
-  border:1px solid var(--line);
-  border-radius:12px;
-  box-shadow: var(--shadow);
-}
-
-/* Titles */
-.site-title{
-  font-family:'Clockwork', serif;
-  font-size: clamp(2.6rem, 6vw, 4.2rem);
-  color:var(--gold);
-  letter-spacing: .06em;
-  text-shadow: 2px 2px 6px #000;
-  margin:0;
-}
-.section-title{
-  font-family:'Sepian', serif;
-  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
-  margin:0 0 14px 0;
-  border-bottom:2px solid var(--crimson);
-  padding-bottom:6px;
-}
-
-/* Header hero with your header.jpg */
-.hero{
-  background:rgba(0,0,0,.6) url('images/header.jpg') center/cover no-repeat;
-  border-bottom:1px solid #fff;
-}
-.hero-inner{
-  text-align:center;
-  padding:56px 18px 24px;
-}
-.tagline{
-  margin:8px 0 0 0;
-  font-style:italic;
-  opacity:.9;
-}
-
-/* Top nav */
-.top-nav{
-  background:rgba(0,0,0,.82);
-  border-top:1px solid #444;
-  border-bottom:1px solid #444;
-}
-.top-nav ul{
-  margin:0; padding:10px;
-  list-style:none; text-align:center;
-}
-.top-nav li{ display:inline-block; margin:0 18px; }
-.top-nav a{
-  font-family:'Sepian', serif;
-  text-decoration:none;
-  color:#f1f1f1;
-  font-weight:700;
-  font-size:1.05rem;
-  padding:6px 2px;
-  border-bottom:2px solid transparent;
-  transition: all .25s ease;
-}
-.top-nav a:hover{ color:var(--crimson); border-bottom-color:var(--crimson); }
-
-/* Buttons */
-.shop-button, input[type="submit"], button{
-  font-family:'Sepian', serif;
-  background:#1a1a1a;
-  color:var(--accent);
-  padding:10px 20px;
-  border:1px solid #666;
-  border-radius:8px;
-  cursor:pointer;
-  transition:.25s ease;
-}
-.shop-button:hover, input[type="submit"]:hover, button:hover{
-  background:#333; color:#fff;
-}
-
-/* Text & lists */
-p, label, legend, figcaption, li{
-  font-family:'Sepian', serif;
-}
-ul{ padding-left:18px; }
-
-/* Gallery grid (you can drop items in #gallery .gallery-grid) */
-.gallery-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));
-  gap:18px;
-}
-.product{
-  background:rgba(255,255,255,.02);
-  border:1px solid #555;
-  border-radius:10px;
-  padding:10px;
-  box-shadow: var(--shadow);
-  text-align:center;
-}
-.product img{
-  width:100%;
-  height:220px;
-  object-fit:cover;
-  border-radius:8px;
-  border:2px solid #666;
-  box-shadow: 2px 2px 10px #000;
-}
-body {
-  background: #0b0b0b;
-  color: #E6EFBB;
-  font-family: Arial, sans-serif;
+/* General Reset */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black url('images/fog-texture.jpg') repeat;
+  background-size: cover;
+  color: #e6e6e6;
+  font-family: 'Cormorant Garamond', serif;
+  line-height: 1.6;
   text-align: center;
 }
 
-h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+/* Header */
+.site-header {
+  padding: 40px 20px;
+  background: rgba(0,0,0,0.9);
+  border-bottom: 2px solid #444;
 }
 
-#order {
-  max-width: 600px;
-  margin: 50px auto;
-  background: rgba(20, 20, 20, 0.9);
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 25px black;
-}
-
-form {
-  text-align: left;
-}
-
-label {
+.logo {
+  width: 120px;
   display: block;
-  margin-top: 15px;
-  font-size: 1.1rem;
+  margin: 0 auto 15px;
 }
 
-input, select, textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #444;
-  border-radius: 6px;
-  background: #1a1a1a;
-  color: #E6EFBB;
+.site-header h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 2.8em;
+  letter-spacing: 2px;
 }
 
-textarea {
-  resize: vertical;
-}
-
-input[type="submit"] {
-  margin-top: 20px;
-  background: #A9157E;
-  border: none;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #fff;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-input[type="submit"]:hover {
-  background: #333;
-  color: #fff;
-}
-
-.payment-note {
-  margin-top: 20px;
-  font-size: 1rem;
-  color: #aaa;
-}
-
-/* Order form */
-/* Order Form Gothic Theme */
-form {
-  background: rgba(0, 0, 0, 0.85);
-  padding: 20px;
-  border: 1px solid #333;
-  border-radius: 8px;
-  box-shadow: 0 0 20px #000;
-  max-width: 500px;
-  margin: 30px auto;
-  text-align: left;
-}
-
-form label {
-  font-family: 'Sepian', sans-serif;
-  font-size: 1rem;
-  color: #E6EFBB;
-}
-
-form input,
-form select,
-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  border: 1px solid #555;
-  border-radius: 5px;
-  background: #111;
-  color: #E6EFBB;
-}
-
-form input[type="submit"] {
-  background: #A9157E;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-form input[type="submit"]:hover {
-  background: #333;
-  color: #fff;
-}
-
-#order h2 {
-  font-family: 'Clockwork Sans', sans-serif;
-  text-align: center;
-  color: #A9157E;
-  margin-bottom: 20px;
-}
-
-#order p {
-  text-align: center;
-  margin-top: 15px;
-  color: #E6EFBB;
-  font-family: 'Clockwork Sans', sans-serif;
-}
-
-/* Footer / socials */
-.footer-card{ text-align:center; }
-.socials{
-  list-style:none; padding:0; margin:6px 0 10px;
-  display:flex; flex-wrap:wrap; gap:14px; justify-content:center;
-}
-.socials a{
-  color:#f1f1f1; text-decoration:none; font-weight:700;
-  border-bottom:2px solid transparent; padding-bottom:2px;
-}
-.socials a:hover{ color:var(--crimson); border-bottom-color:var(--crimson); }
-
-/* Utility */
-img{ max-width:100%; height:auto; display:block; }
-
-/* 🦇 Order Form Styles */
-#order {
-  background: rgba(0,0,0,0.7);
-  padding: 20px;
-  margin: 40px auto;
-  max-width: 600px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px #000;
-}
-
-#order h2 {
-  font-family: 'Sepian', sans-serif;
-  text-align: center;
-  font-size: 2em;
-  color: #e6e6e6;
-  margin-bottom: 15px;
-}
-
-#order form {
-  display: flex;
-  flex-direction: column;
-}
-
-#order label {
-  margin: 10px 0 5px;
-  color: #ddd;
-}
-
-#order input,
-#order select,
-#order textarea {
-  padding: 10px;
-  border: 1px solid #555;
-  border-radius: 5px;
-  background: #222;
-  color: #fff;
-}
-
-#order button {
-  margin-top: 20px;
-  padding: 12px;
-  background: #660000;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
+.tagline {
   font-size: 1.1em;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-#order button:hover {
-  background: #990000;
-}
-
-.payment-note {
-  text-align: center;
-  margin-top: 20px;
-  color: #aaa;
   font-style: italic;
+  color: #bbb;
 }
 
-/* 🕸 Connect Section */
-#connect {
-  background: rgba(15, 15, 15, 0.85);
-  padding: 30px;
-  margin: 40px auto;
-  max-width: 700px;
+/* Section Titles */
+.section-title {
+  font-family: 'Cinzel', serif;
+  font-size: 2.2em;
+  margin: 40px 0 20px;
+  letter-spacing: 2px;
+}
+
+/* Product Gallery */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 20px;
+}
+
+.gallery-item {
+  background: rgba(20, 20, 20, 0.9);
+  padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 0 15px #000;
-  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.7);
+  transition: transform 0.3s ease;
 }
 
-#connect h2 {
-  font-family: 'Sepian', sans-serif;
-  font-size: 2em;
-  color: #e6e6e6;
+.gallery-item:hover {
+  transform: scale(1.03);
+}
+
+.gallery-item h3 {
+  font-family: 'Cinzel', serif;
   margin-bottom: 10px;
 }
 
-#connect .intro {
-  color: #aaa;
-  font-style: italic;
-  margin-bottom: 20px;
-}
-
-.connect-links a,
-.connect-links p {
-  display: block;
-  margin: 6px 0;
-  color: #ddd;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.connect-links a:hover {
-  color: #990000;
-}
-
-.connect-gaming h3 {
-  margin-top: 25px;
-  color: #e6e6e6;
-}
-
-.connect-gaming ul {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0 20px;
-}
-
-.connect-gaming li {
-  margin: 6px 0;
+.gallery-item p {
   color: #ccc;
+  font-size: 0.95em;
 }
 
-#connect .location {
-  margin-top: 15px;
-  color: #999;
-  font-size: 0.95em;
+/* Man Behind the Mask */
+.about-section {
+  padding: 60px 20px;
+  background: rgba(0,0,0,0.85);
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-text {
+  max-width: 800px;
+  background: rgba(25,25,25,0.85);
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+  text-align: left;
+}
+
+.about-text p {
+  font-size: 1em;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+/* Footer */
+.site-footer {
+  padding: 20px;
+  background: rgba(0,0,0,0.95);
+  border-top: 2px solid #444;
+  font-size: 0.9em;
+  color: #888;
 }
