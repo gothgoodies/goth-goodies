@@ -2,33 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Goth Goodies by Hannah</title>
+  <title>Goth Goodies</title>
   <link rel="stylesheet" href="style.css">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
-  <link href="https://fonts.cdnfonts.com/css/sepian" rel="stylesheet">
-  <link href="https://fonts.cdnfonts.com/css/clockwork" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- Header -->
   <header class="site-header">
-    <img src="images/header.jpg" alt="Goth Goodies Header" class="header-img">
-    <h1 class="site-title">Ghoulishly Grave Goodies</h1>
+    <img src="header.jpg" alt="Header" class="header-img">
+    <h1 class="site-title">Goth Goodies</h1>
     <p class="tagline">Blooms, Bats & Boutique – the heart and soul of an oddly extraordinary chaos</p>
-    <img src="goth-goodies.jpg" alt="Goth Goodies Logo" class="small-logo">
+    <img src="goth-goodies.jpg" alt="Small Logo" class="small-logo">
   </header>
+
+  <!-- Nav Buttons -->
+  <nav class="nav-buttons">
+    <button onclick="scrollToSection('about')">About Me</button>
+    <button onclick="scrollToSection('crypt')">Crypt</button>
+    <button onclick="scrollToSection('connect')">Connect</button>
+    <button onclick="scrollToSection('order')">Order</button>
+  </nav>
+
+  <!-- Hall of Fangs -->
+  <section class="hall-of-fangs">
+    <h2>Hall of Fangs</h2>
+    <div class="fangs-grid">
+      <img src="motionless.jpg" alt="Motionless In White">
+      <img src="johnnie.jpg" alt="Johnnie Guilbert">
+      <img src="TVDcanvas.jpg" alt="TVD Canvas">
+    </div>
+  </section>
+
+  <!-- Gallery Button -->
+  <section class="gallery">
+    <h2>Goth Goodies Gallery</h2>
+    <button onclick="window.location.href='images/'">Enter Gallery</button>
+  </section>
 
   <!-- Product Sections -->
   <main class="products">
+    <h2>Ghoulishly Grave Goodies</h2>
 
-    <!-- Wickedly Sweet Treats -->
-    <section class="product-category">
-      <h2 class="clockwork">Wickedly Sweet Treats</h2>
-      <p class="desc">Homemade gothic desserts, customizable to your cravings.</p>
+    <div class="product-category">
+      <h3 class="clockwork">Wickedly Sweet Treats</h3>
+      <p>Customizable baked goods made to order.</p>
       <ul>
         <li>Banana Bread</li>
         <li>Birthday Cake or Cupcakes</li>
@@ -49,138 +67,123 @@
         <li>Pumpkin Pie</li>
         <li>Sugar Cookies</li>
       </ul>
-      <button onclick="openOrderForm('Wickedly Sweet Treats')">Order Now</button>
-    </section>
+    </div>
 
-    <!-- Beads Boutique -->
-    <section class="product-category">
-      <h2 class="clockwork">Beads Boutique</h2>
-      <p class="desc">Bracelets & necklaces with gothic-named bead colors. Fully customizable.</p>
-      <button onclick="openOrderForm('Beads Boutique')">Order Now</button>
-    </section>
+    <div class="product-category">
+      <h3>Beads Boutique</h3>
+      <p>Fully customizable necklaces & bracelets.</p>
+      <ul>
+        <li>Coffin Bronze</li>
+        <li>Witch’s Gold</li>
+        <li>Blood Moon</li>
+        <li>Dandelion Doom</li>
+        <li>Crybaby Blue</li>
+        <li>Chaos Core</li>
+        <!-- Add all your bead names here -->
+      </ul>
+    </div>
 
-    <!-- Sticker Booth -->
-    <section class="product-category">
-      <h2 class="clockwork">Sticker Booth</h2>
-      <p class="desc">Singles or packs (1–20). Themed for horror, plants, music, and more.</p>
-      <button onclick="openOrderForm('Sticker Booth')">Order Now</button>
-    </section>
+    <div class="product-category">
+      <h3>Sticker Booth</h3>
+      <p>Singles or packs of 1–20 (big or small).</p>
+      <ul>
+        <li>Horror Movie</li>
+        <li>Mushroom Core</li>
+        <li>Crazy Plant Lady</li>
+        <li>American Horror Story</li>
+        <li>Satanist Special</li>
+        <li>Cat Tarot Cards</li>
+        <li>Coffee Freak</li>
+        <li>Motivational Quotes</li>
+        <li>Music & Culture</li>
+        <li>Holiday</li>
+        <li>Custom Made</li>
+      </ul>
+    </div>
 
-    <!-- Bone Cut Boulevard -->
-    <section class="product-category">
-      <h2 class="clockwork">Bone Cut Boulevard</h2>
-      <p class="desc">Paintings & photography — from realism to splatter to memorial pieces.</p>
-      <button onclick="openOrderForm('Bone Cut Boulevard')">Order Now</button>
-    </section>
+    <div class="product-category">
+      <h3>Bone-Cut Boulevard</h3>
+      <p>Haunting canvases & artwork.</p>
+      <ul>
+        <li>3x3, 4x4, 4x6, 6x6, 8x10, 11x14</li>
+        <li>Custom Sizes</li>
+        <li>Photography</li>
+        <li>Black & White</li>
+        <li>Realism</li>
+        <li>Cartoon</li>
+        <li>Memorial Pieces</li>
+        <li>Splatter Paint</li>
+        <li>Blood Drippings</li>
+      </ul>
+    </div>
 
-    <!-- Vamp Safe Metal -->
-    <section class="product-category">
-      <h2 class="clockwork">Vamp Safe Metal</h2>
-      <p class="desc">Jewelry for the damned — earrings, necklaces, charms.</p>
-      <button onclick="openOrderForm('Vamp Safe Metal')">Order Now</button>
-    </section>
+    <div class="product-category">
+      <h3>Vamp Safe Metal</h3>
+      <ul>
+        <li>Stud Earrings</li>
+        <li>Dangle Earrings</li>
+        <li>Custom Necklaces</li>
+        <li>Charms: Solid Cross, Hollow Cross, Flared Cross, Big Square Cross</li>
+      </ul>
+    </div>
 
-    <!-- Aphrodite Apparel -->
-    <section class="product-category">
-      <h2 class="clockwork">Aphrodite Apparel</h2>
-      <p class="desc">Tie-dye & custom-painted clothing, shoes, socks & more.</p>
-      <button onclick="openOrderForm('Aphrodite Apparel')">Order Now</button>
-    </section>
+    <div class="product-category">
+      <h3>Aphrodite Apparel</h3>
+      <ul>
+        <li>Tie Dye Clothing (denim adds to cost)</li>
+        <li>Shirts</li>
+        <li>Socks</li>
+        <li>Tank Tops</li>
+        <li>Sweatpants</li>
+        <li>Custom Shoes</li>
+        <li>Bleach Paint Clothing</li>
+      </ul>
+    </div>
 
-    <!-- Fragrance Frenzy -->
-    <section class="product-category">
-      <h2 class="clockwork">Fragrance Frenzy</h2>
-      <p class="desc">Handcrafted perfumes (1oz) with essential oils.</p>
-      <button onclick="openOrderForm('Fragrance Frenzy')">Order Now</button>
-    </section>
+    <div class="product-category">
+      <h3>Fragrance Frenzy</h3>
+      <p>1oz essential oil perfumes (men & women).</p>
+      <ul>
+        <li>Lemongrass, Myrrh, Spearmint, Peppermint, Vanilla, Lemon, Gardenia, Rose</li>
+        <li>Frankincense, Lavender, Clove, Rosemary, Raspberry, Green Tea, Grape</li>
+        <li>Sandalwood, Clary Sage, Jasmine, Freesia, White Tea, Fir, Cedarwood</li>
+        <li>Cinnamon, Cypress, Grapefruit, Milk, Blueberry, Eucalyptus, Orange Blossom</li>
+        <li>Mugwort, Bergamot, Geranium, Thyme, Chamomile, Passion Fruit, Sweet Orange</li>
+        <li>Verbena, Pine, Osmanthus</li>
+      </ul>
+    </div>
 
-    <!-- Goth Goodies Grimmoire -->
-    <section class="product-category">
-      <h2 class="clockwork">Goth Goodies Grimmoire</h2>
-      <p class="desc">Other custom creations — tattoo designs, lighters, pillows, bookmarks, and more.</p>
-      <button onclick="openOrderForm('Goth Goodies Grimmoire')">Order Now</button>
-    </section>
-
+    <div class="product-category">
+      <h3>Goth Goodies Grimmoire</h3>
+      <ul>
+        <li>Custom Tattoo Designs</li>
+        <li>Clocks</li>
+        <li>Bookmarks</li>
+        <li>Painted Playing Cards</li>
+        <li>Throw Pillows</li>
+        <li>Painted Lighters</li>
+        <li>Beaded Car Charms</li>
+      </ul>
+    </div>
   </main>
 
-  <!-- Order Form Popup -->
-  <div id="orderForm" class="order-form">
-    <div class="form-content">
-      <span class="close" onclick="closeOrderForm()">&times;</span>
-      <h3 id="orderTitle">Order</h3>
-      <form>
-        <label for="details">Customization Details:</label>
-        <textarea id="details" name="details" placeholder="Write your order details here..."></textarea>
-        <button type="submit">Submit Order</button>
-      </form>
-    </div>
-  </div>
-
-  <!-- Man Behind the Mask -->
-  <section class="about">
-    <h2>The Man Behind the Mask</h2>
-    <p>[ My name is Hannah, the person behind the shadows. Jack of all trades. And everything you see here can be made to order. I just love designing and crafting. I've been doing everything under the 'art' moon since I was just a little girl. It all started with loom bands. Crafting has always been my middle name. I know it sounds cliche but...It was always me my best friend Lily Zimdars, who very sadly passed on in April of 2020. During our childhood, We made so many loom band bracelets, charms, and just everything and anything. We even took sewing classes together in summer school. After that, we would go play at my Great Aunts house which was a quilting shop back then. Lily and I would make the quilting customers easy bake oven goodies and whatever made them happy! She really helped me find my soul purpose- to CREATE🤍. Everything i do is with love and intention. I don't ask for a lot money because what I do just means so much to me, and I know what it's like to struggle. I've been busting my ass to make a career for myself. A better life for me and my fiancé, Ethan. I strive to make him and myself proud. I believe it's all about vibes! good energy! 
-      I found my love for horror and gothy stuff in middle school when I became depressed. I was the odd one out. I went through a lot of friend groups and cliques, and couldn't figure out where I belonged. Thats when I eventually learned that you don't have to be a part of some 'group'. Your people will come to you, based off of your energy. I've worked on myself so much thoughout the years, and it's one of the hardest battles imaginable. 
-      So here I am now, facing adulthood. The forest of the unknown. My plan is to continue bringing beautiful things into this world. To make people smile. In this path I walk today, whatever I stumble across, I use it to create something beautiful. ]</p>
-  </section>
-
-  <!-- Childhood Gallery Section -->
-<section class="childhood-gallery">
-  <h2>Childhood Creations</h2>
-  <p class="childhood-intro">An inside look into my earliest works — the roots of my emo core chaos.</p>
-
-  <div class="childhood-grid">
-    <div class="childhood-item">
-      <img src="images/childhood1.jpg" alt="me and dudey">
-      <p>Birthday Piece For My Brother Cody – One of his favorite music groups is Ganja White Night, dubstep genre. Mr Wobbles is one of the main characters, from their music videos. In 2023 I made this 11x14 canvas for him at the last minute and it still came out perfectly. </p>
-    </div>
-
-    <div class="childhood-item">
-      <img src="images/childhood2.jpg" alt="5th grade andy warhol">
-      <p>Warhol's Violas— One of my Elementary paintings, All watercolor in pop-art style. Inspired by my Andy Warhol Biography. each block is a complementary color to the viola inside. </p>
-    </div>
-
-    <div class="childhood-item">
-      <img src="images/childhood3.jpg" alt="Middle school 7th grade art project">
-      <p>A middle school project - Where I leaned fully into the spooky vibes and emo music culture.</p>
-    </div>
-
-    <!-- 🔮 Copy & paste more blocks like this for extra images -->
-    <div class="childhood-item">
-      <img src="images/childhood4.jpg" alt="Middle school art piece">
-      <p>Middle school piece — My favorite art teacher Ms. Seichter had us make clay projects, and I made a mini mushroom house for fairies. It includes a textured stem and a patterned top, and a tiny doorstep that always breaks off LOL.  </p>
-    </div>
-  </div>
-</section>
-
-   <div class="childhood-item">
-      <img src="images/childhood5.jpg" alt="Hannah and Lily">
-      <p>My Beloved Twin-flame Lily and I — Mom snapped a pic of one of our normal sleepovers togther, making our loom band bracelets and charms! We were about 10 in this picture. We always played outside and ended up with sunburn, then came back inside and made our crafts. It was our favorite thing to do.</p>
-    </div>
-  </div>
-</section>
-
-
-  <!-- Contact -->
+  <!-- Footer -->
   <footer>
-    <h3>Contact Me</h3>
-    <p>Email: <a href="mailto:owlsbroom@proton.me">owlsbroom@proton.me</a></p>
-    <p>Phone: +1 920-728-8585 (Signal: mavismorningstar.22)</p>
-    <p>Instagram: <a href="https://instagram.com/gothgoodieshhh">@gothgoodieshhh</a></p>
-    <p>Facebook: <a href="https://www.facebook.com/share/1MFytBwxsJ/?mibextid=wwXlfr">Hannah MacLeod (Na)</a></p>
-    <p>PlayStation: mavismorningstar | Steam: r0tten_wasp | Twitch: LocalSalamander</p>
-    <p>Location: Quad Cities, Iowa</p>
+    <h3>Childhood Creations</h3>
+    <section id="about">
+      <h4>The Man Behind the Mask</h4>
+      <p>[Insert your personal story here]</p>
+    </section>
+    <section id="connect">
+      <h4>Connect with Me</h4>
+      <p>[Add socials & gaming links here]</p>
+    </section>
     <p>&copy; 2025 Goth Goodies</p>
   </footer>
 
-  <!-- Scripts -->
   <script>
-    function openOrderForm(category) {
-      document.getElementById("orderForm").style.display = "block";
-      document.getElementById("orderTitle").innerText = "Order – " + category;
-    }
-    function closeOrderForm() {
-      document.getElementById("orderForm").style.display = "none";
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
     }
   </script>
 
