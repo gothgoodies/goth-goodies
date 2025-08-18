@@ -1,378 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Goth Goodies Gravesite</title>
-  <link href="https://fonts.googleapis.com/css2?family=Clockwork+Sans:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- STYLES -->
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- If you have webfont files, keep these @font-face rules in style.css and ensure files exist in /fonts -->
-  <!-- Fallback note: if your custom fonts aren’t loaded yet, the site will use serif fonts safely. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goth Goodies</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- ====== HEADER ====== -->
-  <header class="hero">
-    <div class="hero-inner">
-      <h1 class="site-title">Goth Goodies Gravesite</h1>
-      <p class="tagline">Blooms, Bats & Boutique- The heart and soul of an oddly extraordinary chaos.</p>
-    </div>
+  <!-- Header -->
+  <header class="site-header">
+    <img src="images/logo.png" alt="Goth Goodies Logo" class="logo">
+    <h1>Goth Goodies</h1>
+    <p class="tagline">Dark Delights & Handmade Horrors</p>
   </header>
 
-  <!-- ====== NAV ====== -->
-  <nav class="top-nav">
-    <ul>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#order">Order</a></li>
-      <li><a href="#fangs">Hall of Fangs</a></li>
-      <li><a href="#connect">Connect</a></li>
-      <li><a href="#Man Behind the Mask">Man Behind the Mask</a></li>
-    </ul>
-  </nav>
-
- <!-- ====== HALL OF FANGS ====== -->
-  <section id="fangs" class="card">
-    <h2 class="section-title">Hall of Fangs (Showcase)</h2>
-    <div class="fangs-grid">
-      <figure class="fangs-item">
-        <img src="images/TVDcanvas.jpg" alt="TVD Canvas" />
-        <figcaption>Damon Salvatore from The Vampire Diaries </figcaption>
-      </figure>
-      <figure class="fangs-item">
-        <img src="images/motionless.jpg" alt="Motionless in White piece" />
-        <figcaption>Chris from Motionless in White</figcaption>
-      </figure>
-      <figure class="fangs-item">
-        <img src="images/johnnie.jpg" alt="Johnnie Guilbert piece" />
-        <figcaption>Johnnie Guilbert</figcaption>
-      </figure>
-    </div>
-  </section>
-  
-  <!-- ====== GALLERY ====== -->
-  <section id="gallery" class="card">
-    <h2 class="section-title">🕯️ Goth Goodies Gallery 🕯️</h2>
-    <p>Browse the vibes.</p>
-
-    <div class="product">
-    <img src="images/beads.jpg.heic" alt="Beads Boutique">
-    <p>Seed Bead Bracelet - $3</p>
-  </div>
-
-  <div class="product">
-    <img src="images/cards.jpg.heic" alt="Animated Playing Cards">
-    <p>Collectible Cards - $30</p>
-  </div>
-
-   <div class="product">
-    <img src="images/b-pie.jpg.heic" alt="Wickedly Sweet Treats">
-    <p>Blueberry Pie - $12</p>
-  </div>
-
-  <div class="product">
-    <img src="images/bookmark.jpg" alt="Butterfly Bookmark">
-    <p>Butterfly Bookmark - $25</p>
-  </div>
-
-  <div class="product">
-    <img src="images/clock.jpg" alt="Domino Clock">
-    <p>Domino Clock - $50</p>
-  </div>
-
-  <div class="product">
-    <img src="images/johnnie.jpg" alt="Johnnie Painting">
-    <p>Johnnie Guilbert Wooden Slab Painting (5x7) - $50</p>
-  </div>
-
-  <div class="product">
-    <img src="images/motionless.jpg" alt="chris Motionless Painting">
-    <p>Motionless in White Chris Canvas Painting (8x10) - $80</p>
-  </div>
-
-  <div class="product">
-    <img src="images/nun.jpg" alt="Nun Painting">
-    <p>The Nun Canvas Painting (11x14) - $100</p>
-  </div>
-
-  <div class="product">
-    <img src="images/TVDcanvas.jpg" alt="Ian Somerhalder Painting">
-    <p>Damon Salvatore Painting 8x10 Canvas - $85</p>
-  </div>
-
-  <div class="product">
-    <img src="images/spider.jpg" alt="Spider Tattoo">
-    <p>Original Tattoo Design (shown: Hannah's Tattoo) - $100</p>
-  </div>
-
-  <div class="product">
-    <img src="images/13th.jpg" alt="Friday the 13th Sign">
-    <p>Camp Crystal Lake Sign - $60</p>
-  </div>
-
-  <div class="product">
-    <img src="images/apparel.jpg" alt="Bloody Tie-dye Shirt">
-    <p>Tie-dye Shirt - $35</p>
-  </div>
-
-  <div class="product">
-    <img src="images/cake.jpg" alt="Birthday Cake">
-    <p>Birthday Cake - $45</p>
-  </div>
-
-  <div class="product">
-    <img src="images/stickers.jpg" alt="Sticker Collection">
-    <p>Stickers - $3-30</p>
-  </div>
-
-  <div class="product">
-    <img src="images/lighter.jpg" alt="Painted Lighter">
-    <p>Painted Lighter - $8</p>
-  </div>
-
-  <div class="product">
-    <img src="images/jewelry.jpg" alt="Necklace Charms">
-    <p>Metal Necklaces - $6</p>
-  </div>
-
-  <div class="product">
-    <img src="images/perfume.jpg" alt="Perfume">
-    <p>Custom Perfume (1 fl. oz.) - $5</p>
-  </div>
-    <!-- Put your existing product images here if you’d like -->
-    <div class="gallery-grid">
-      <!-- example placeholders -->
-      <!-- <figure class="product"><img src="images/example1.jpg" alt=""><figcaption>Example</figcaption></figure> -->
-    </div>
-  </section>
-
   <!-- Product Gallery -->
-  <section id="gallery">
-    <img src="goth-goodies.jpg" alt="Goth Goodies Logo" class="logo-img" />
-    
-    <div class="product-section">
-      <h2>Baking</h2>
-      <ul>
-        <li>Banana Bread, Carrot Cake, Pumpkin Bars</li>
-        <li>Blueberry, Blackberry, Lemon, Chocolate Pie</li>
-        <li>Birthday Cakes, Cake Pops, Muffins</li>
-        <li>Cookies, Brownies, Peanut Butter Bars</li>
-      </ul>
-    </div>
+  <main>
+    <section class="gallery">
+      <h2 class="section-title">The Chaos Tree of Goodies</h2>
+      <div class="gallery-container">
 
-    <div class="product-section">
-      <h2>Jewelry & Beads</h2>
-      <ul>
-        <li>Bead Bracelets & Necklaces ($2–$3)</li>
-        <li>Charms, Stones, Seed Beads, Custom Sets</li>
-        <li>Earrings, Necklaces, Car Charms</li>
-      </ul>
-    </div>
+        <!-- Baking -->
+        <div class="gallery-item">
+          <h3>Baking</h3>
+          <p>Banana Bread, Carrot Cake, Zucchini Bread, Pies, Cookies, Brownies...</p>
+        </div>
 
-    <div class="product-section">
-      <h2>Art & Decor</h2>
-      <ul>
-        <li>Canvas Art: Portraits, Realism, Splatter</li>
-        <li>Digital Art, Signs, Clocks, Tie Dye</li>
-        <li>Memorial Pieces, Photography Prints</li>
-      </ul>
-    </div>
+        <!-- Beads -->
+        <div class="gallery-item">
+          <h3>Beads</h3>
+          <p>Stone, Charm, Gothic, Chokers...</p>
+        </div>
 
-    <div class="product-section">
-      <h2>Goth Goodies</h2>
-      <ul>
-        <li>Perfumes, Painted Lighters, Throw Pillows</li>
-        <li>Calligraphy, Bookmarks, Birthday Cards</li>
-        <li>Stickers: Horror, Nature, Goth, Packs of 5–10</li>
-        <li>Custom Shoes & More</li>
-      </ul>
-    </div>
+        <!-- Stickers -->
+        <div class="gallery-item">
+          <h3>Stickers</h3>
+          <p>Horror, Goth, Music, Pop, Holiday...</p>
+        </div>
 
-    <div class="product-section">
-      <h2>User Submissions</h2>
-      <p>Photos from happy customers will appear here soon!...</p>
-    </div>
-  </section>
+        <!-- Canvas Art -->
+        <div class="gallery-item">
+          <h3>Canvas Art</h3>
+          <p>Portraits, Splatter, Realism, Cartoon...</p>
+        </div>
 
-  <!-- About -->
-  <section id="about">
-    <h2>The Man Behind The Mask</h2>
-    <p>
-      "I'm Hannah, the person behind the shadows. Jack of all trades. And everything you see here can be made to order. I just love designing and crafting. I've been doing everything under the 'art' moon since i was just a little girl. It all started with loom bands. Crafting has always been my middle name. I know it sounds cliche but...It was always me my best friend Lily Zimdars, who very sadly passed on in April of 2020. During our childhood, We made so many loom band bracelets, charms, and just everything and anything. We even took sewing classes together in summer school. After that, we would go play at my Great Aunts house which was a quilting shop back then. Lily and I would make the quilting customers easy bake oven goodies and whatever made them happy! She really helped me find my soul purpose- to CREATE🤍. Everything i do is with love and intention. I don't ask for a lot money because what I do just means so much to me, and I know what it's like to struggle. I've been busting my ass to make a career for myself. A better life for me and my fiancé, Ethan. I strive to make him and myself proud. I believe it's all about vibes! good energy! 
-      I found my love for horror and gothy stuff in middle school when i became depressed. I was the odd one out. I went through a lot of friend groups and cliques, and couldn't figure out where I belonged. Thats when i eventually learned that you don't have to be a part of some 'group'. Your people will come to you, based off of your energy. I've worked on myself so much thoughout the years, and it's one of the hardest battles imaginable. 
-      So here I am now, facing adulthood. The forest of the unknown. My plan is to continue bringing beautiful things into this world. To make people smile. In this path I walk today, whatever I stumble across, I use it to create something beautiful. "
-    </p>
-  </section>
+        <!-- Jewelry -->
+        <div class="gallery-item">
+          <h3>Jewelry</h3>
+          <p>Earrings, Necklaces, Bracelets...</p>
+        </div>
 
-  <!-- ====== SMALL JS (no build tools) ====== -->
-  <script>
-    // Smooth scroll for same-page links
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', function(e){
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          e.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      });
-    });
+        <!-- Other -->
+        <div class="gallery-item">
+          <h3>Other Creations</h3>
+          <p>Digital Art, Tattoos, Painted Lighters, Perfumes, Tie Dye...</p>
+        </div>
+      </div>
+    </section>
 
-    // Toggle Custom Mix field
-    const beadSel = document.getElementById('bead');
-    const customWrap = document.getElementById('customMixWrap');
-    if (beadSel) {
-      beadSel.addEventListener('change', () => {
-        customWrap.classList.toggle('hidden', beadSel.value !== 'custom-mix');
-      });
-    }
+    <!-- Man Behind The Mask -->
+    <section id="about" class="about-section">
+      <h2 class="section-title">The Man Behind The Mask</h2>
 
-    // Current year
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+      <div class="about-content">
+        <!-- Childhood Gallery -->
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <img src="images/child1.jpg" alt="Young Artist 1">
+            <p>First sketchbook, age 6</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/child2.jpg" alt="Young Artist 2">
+            <p>Art fair memories</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/child3.jpg" alt="Young Artist 3">
+            <p>Growing into the craft</p>
+          </div>
+        </div>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Goth Goodies Orders</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-  
-<!-- 🦇 Order Form Section -->
-<section id="order">
-  <h2>Place Your Desire</h2>
-  <form action="mailto:owlsbroom@proton.me" method="POST" enctype="text/plain">
-    <!-- Name -->
-    <label for="name">Your Name:</label>
-    <input type="text" id="name" name="name" required>
+        <!-- Text Box -->
+        <div class="about-text">
+          <p>
+            [ Write your story here. This is your stage to reveal the haunted halls that shaped the artist you became. Paste/edit text directly inside this box in the HTML file. ]
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <!-- Email -->
-    <label for="email">Your Email:</label>
-    <input type="email" id="email" name="email" required>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2025 Goth Goodies — All Rights Reserved</p>
+  </footer>
 
-    <!-- Product Type -->
-    <label for="product">Choose a Product:</label>
-    <select id="product" name="product" required>
-      <option value="">-- Select an item --</option>
-      <option value="bracelet">Bracelet</option>
-      <option value="necklace">Necklace</option>
-      <option value="earrings">Earrings</option>
-      <option value="custom_art">Custom Art</option>
-      <option value="sticker_pack">Sticker Pack</option>
-      <option value="baked_good">Baked Good</option>
-      <option value="other">Other</option>
-    </select>
-
-    <!-- Bead Colors (shows only for jewelry) -->
-    <div id="beadColorsField" style="display:none;">
-      <label for="beadColor">Select Bead Color:</label>
-      <select id="beadColor" name="beadColor">
-        <option value="">-- Select a color --</option>
-        <option>witch's gold</option>
-        <option>bone dust</option>
-        <option>hexberry</option>
-        <option>blood moon</option>
-        <option>witch wine</option>
-        <option>pumpkin guts</option>
-        <option>coffin bronze</option>
-        <option>nocturne</option>
-        <option>dandelion doom</option>
-        <option>serpent sop</option>
-        <option>venom ivy</option>
-        <option>rotting garden</option>
-        <option>haunted metal</option>
-        <option>jack-o'-lantern</option>
-        <option>poison ivy</option>
-        <option>forbidden leaves</option>
-        <option>frostbite</option>
-        <option>crybaby blue</option>
-        <option>mummified chains</option>
-        <option>chaos core</option>
-        <option>ocean's mourning</option>
-        <option>depths ó the sea</option>
-        <option>possessed mermaid</option>
-        <option>sickly sweet bubblegum</option>
-      </select>
-    </div>
-
-    <!-- Extra Details -->
-    <label for="details">Order Details (size, flavor, notes, concerns):</label>
-    <textarea id="details" name="details" rows="4"></textarea>
-
-    <!-- Submit -->
-    <button type="submit">Submit Order to Altar</button>
-  </form>
-
-  <p class="payment-note">
-    🖤 After I confirm your order by email, please send payment via CashApp:<br>
-    <strong>$dankzomBie</strong>
-  </p>
-</section>
-
-  <!-- 🕸 Connect With Me -->
-<section id="connect">
-  <h2>Connect With Me</h2>
-  <p class="intro">Stay spooky & keep in touch through socials, games, or streams 🦇</p>
-
-  <div class="connect-links">
-    <!-- Socials -->
-    <a href="https://www.instagram.com/gothgoodieshhh" target="_blank">Instagram: @gothgoodieshhh</a>
-    <a href="https://www.facebook.com/share/1MFytBwxsJ/?mibextid=wwXlfr" target="_blank">Facebook: Hannah MacLeod</a>
-    <a href="mailto:owlsbroom@proton.me">Email: owlsbroom@proton.me</a>
-    <a href="tel:+19207288585">Phone: +1 (920) 728-8585</a>
-    <p>Signal: mavismorningstar.22</p>
-  </div>
-
-  <div class="connect-gaming">
-    <h3>🎮 Gaming & Streaming</h3>
-    <p>Let’s game together or catch me streaming sometimes!</p>
-    <ul>
-      <li>PlayStation: <strong>mavismorningstar</strong></li>
-      <li>Steam: <strong>r0tten_wasp</strong></li>
-      <li>Twitch: <a href="https://www.twitch.tv/LocalSalamander" target="_blank">LocalSalamander</a></li>
-    </ul>
-  </div>
-
-  <p class="location">📍 Based near the Quad Cities, Iowa</p>
-</section>
-
-<!-- 🦇 Script: Show/Hide Bead Colors -->
-<script>
-  const productSelect = document.getElementById("product");
-  const beadColorsField = document.getElementById("beadColorsField");
-
-  productSelect.addEventListener("change", function() {
-    const value = this.value;
-    if (value === "bracelet" || value === "necklace" || value === "earrings") {
-      beadColorsField.style.display = "block";
-    } else {
-      beadColorsField.style.display = "none";
-    }
-  });
-</script>
-
-      <!-- Size -->
-      <label for="size">Size (if applicable):</label>
-      <input type="text" id="size" name="size" placeholder="e.g. small, medium, 6-inch">
-
-      <!-- Custom Notes -->
-      <label for="notes">Custom Notes:</label>
-      <textarea id="notes" name="notes" rows="4" placeholder="Add details like charm type, color mix, or custom text"></textarea>
-
-      <!-- Submit -->
-      <input type="submit" value="Submit Order">
-    </form>
-
-    <p class="payment-note">
-      💀 After submitting your order, please send your payment to:<br>
-      <strong>CashApp: <a href="https://cash.app/$dankzomBie" target="_blank">$dankzomBie</a></strong>
-    </p>
-  </section>
 </body>
 </html>
