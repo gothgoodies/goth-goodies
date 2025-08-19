@@ -23,6 +23,7 @@
 .hero > *:not(.hero-overlay) {
   position: relative;
   z-index: 2;
+  color: #e6dcc6; /* make sure title + slogan are visible */
 }
 
 /* logo/title sizing (adjust to taste) */
@@ -298,12 +299,6 @@ footer h3, footer h4 {
   font-size: 1rem;
   color: #eee;
   margin: 0;
-}
-
-/* Hero text fix */
-.hero {
-  text-align: center;
-  color: #e6dcc6; /* pale gothic beige so text shows */
 }
 
 .hero h1, 
