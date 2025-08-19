@@ -1,9 +1,44 @@
 /* Reset & base */
+
+/* hero background */
+.hero{
+  position: relative;
+  min-height: 60vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 4rem 1rem;
+  background: url("images/header.jpg") center/cover no-repeat;
+}
+
+/* darken the image just a touch so text pops */
+.hero-overlay{
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.45);
+  z-index: 1;
+}
+
+/* make sure content sits ABOVE the bg/overlay */
+.hero > *:not(.hero-overlay){
+  position: relative;
+  z-index: 2;
+}
+
+/* logo/title sizing (adjust to taste) */
+.logo{
+  max-width: 120px; /* try 120–160px */
+  height: auto;
+  margin-bottom: .75rem;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Sepian', serif;
-  background: url("images/bridge.jpg") no-repeat center center fixed;
+  background: #000 url("images/bridge.jpg") center / cover no-repeat fixed;
+}
+
   background-size: cover;
   color: #e6dcc6; /* light tan */
   text-align: center;
