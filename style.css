@@ -299,3 +299,16 @@ footer h3, footer h4 {
   color: #eee;
   margin: 0;
 }
+
+/* Hero text fix */
+.hero {
+  text-align: center;
+  color: #e6dcc6; /* pale gothic beige so text shows */
+}
+
+.hero h1, 
+.hero .site-title, 
+.hero .slogan {
+  color: #e6dcc6; /* make sure title + slogan are visible */
+  margin: 0.5rem 0;
+}
