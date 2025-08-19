@@ -10,7 +10,7 @@
   align-items: center;     /* horizontal center */
   text-align: center;
   padding: 2rem 1rem;
-  background: url("images/header.jpg") center/cover no-repeat;
+  background: url("images/header.jpeg") center/cover no-repeat;
 }
 
 .hero-overlay {
