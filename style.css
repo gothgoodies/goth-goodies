@@ -3,14 +3,13 @@
 /* hero background */
 .hero {
   position: relative;
-  min-height: 70vh;        /* taller hero so content fits */
-  display: flex;           /* use flex instead of grid (simpler) */
-  flex-direction: column;  /* stack logo, title, slogan, nav */
-  justify-content: center; /* vertical center */
-  align-items: center;     /* horizontal center */
+  background-image: url("./images/header.jpeg"); /* looks in same root folder */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #e6dcc6;
   text-align: center;
-  padding: 2rem 1rem;
-  background: url("images/header.jpeg") center/cover no-repeat;
+  padding: 4rem 1rem;
 }
 
 .hero-overlay {
