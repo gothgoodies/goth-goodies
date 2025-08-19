@@ -1,32 +1,32 @@
 /* Reset & base */
 
 /* hero background */
-.hero{
+.hero {
   position: relative;
-  min-height: 60vh;
-  display: grid;
-  place-items: center;
+  min-height: 70vh;        /* taller hero so content fits */
+  display: flex;           /* use flex instead of grid (simpler) */
+  flex-direction: column;  /* stack logo, title, slogan, nav */
+  justify-content: center; /* vertical center */
+  align-items: center;     /* horizontal center */
   text-align: center;
-  padding: 4rem 1rem;
+  padding: 2rem 1rem;
   background: url("images/header.jpg") center/cover no-repeat;
 }
 
-/* darken the image just a touch so text pops */
-.hero-overlay{
+.hero-overlay {
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,.45);
   z-index: 1;
 }
 
-/* make sure content sits ABOVE the bg/overlay */
-.hero > *:not(.hero-overlay){
+.hero > *:not(.hero-overlay) {
   position: relative;
   z-index: 2;
 }
 
 /* logo/title sizing (adjust to taste) */
-.logo{
+.logo {
   max-width: 120px; /* try 120–160px */
   height: auto;
   margin-bottom: .75rem;
