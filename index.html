@@ -202,18 +202,36 @@
     </div>
   </main>
 
-  <!-- Order Form Popup -->
-  <div id="orderForm" class="order-form">
-    <div class="form-content">
-      <span class="close" onclick="closeOrderForm()">&times;</span>
-      <h3 id="orderTitle">Order Your Personalized Goodies</h3>
-      <form>
-        <label for="details">Customization Details:</label>
-        <textarea id="details" name="details" placeholder="Write your order details here..."></textarea>
-        <button type="submit">Submit Order to the Unholy Cathedral</button>
-      </form>
-    </div>
+<!-- Order Popup -->
+<div id="orderPopup" class="popup-overlay">
+  <div class="popup-content">
+    <h2>Place Your Desire</h2>
+    <form id="orderForm">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="product">Choose a Product:</label>
+      <select id="product" name="product" required>
+        <option value="">-- Select --</option>
+        <option value="baking">Baking</option>
+        <option value="beads">Beads</option>
+        <option value="stickers">Stickers</option>
+        <option value="canvas">Canvas Art</option>
+        <option value="jewelry">Jewelry</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="details">Order Details (Size, Flavor, Color, etc):</label>
+      <textarea id="details" name="details" placeholder="Describe your specifics to the vampires here..."></textarea>
+
+      <button type="submit" class="submit-btn">Submit Order to Altar</button>
+    </form>
+    <button class="close-btn" onclick="closePopup()">Close</button>
   </div>
+</div>
 
   <!-- Footer -->
   <footer>
