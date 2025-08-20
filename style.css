@@ -82,44 +82,69 @@ h1, h2, h3 {
   margin: 15px 0;
 }
 
-.nav-buttons ul {
-  display: flex;           /* line up list items horizontally */
-  gap: 1rem;               /* spacing between buttons */
-  list-style: none;        /* remove bullets */
-  margin: 0;               /* remove default ul margin */
-  padding: 0;              /* remove default ul padding */
-  justify-content: center; /* center all buttons */
+/* Nav Buttons - Ornate Gothic Frames */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
   align-items: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  position: relative;
 }
 
-.nav-buttons li {
-  margin: 0;               /* remove default li spacing */
-}
-
-.nav-buttons li a {
+.nav-buttons a {
   color: #e6dcc6;
-  padding: 8px 18px;
+  text-decoration: none;
   font-family: 'Sepian', serif;
   font-size: 1.2rem;
-  text-decoration: none;
+  padding: 10px 22px;
   position: relative;
   display: inline-block;
   transition: 0.3s;
+  border-radius: 14px; /* rounded frame shape */
+  overflow: hidden;
 }
 
-/* Frame effect stays the same */
-.nav-buttons li a::before,
-.nav-buttons li a::after { ... }
-.nav-buttons li a::after { ... }
-.nav-buttons li a:hover::before,
-.nav-buttons li a:hover::after { ... }
-
-/* Cart button in top right */
-.cart-btn {
+/* Main glowing frame */
+.nav-buttons a::before {
+  content: "";
   position: absolute;
-  right: 0;
-  font-size: 1.3rem;
-  padding: 8px 12px;
+  inset: 0;
+  border-radius: 14px;
+  border: 2px solid #e6dcc6;
+  box-shadow: inset 0 0 6px rgba(230,220,198,0.4),
+              0 0 8px rgba(230,220,198,0.5);
+  transition: 0.3s;
+}
+
+/* Inner gilded line */
+.nav-buttons a::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border-radius: 10px;
+  border: 1px solid rgba(230,220,198,0.7);
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+/* Hover - haunted golden glow */
+.nav-buttons a:hover::before {
+  border-color: #fff6e0;
+  box-shadow: inset 0 0 12px rgba(230,220,198,0.6),
+              0 0 15px #e6dcc6;
+}
+
+.nav-buttons a:hover::after {
+  border-color: #fff6e0;
+  opacity: 1;
+}
+
+/* Cart button styled the same */
+.cart-btn {
+  font-size: 1.4rem;
+  padding: 6px 12px;
+  border-radius: 50%;
 }
 
 /* Hall of Fangs */
