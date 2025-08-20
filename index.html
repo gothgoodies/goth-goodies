@@ -287,22 +287,23 @@
     <p>&copy; 2025 Goth Goodies</p>
   </footer>
 
- <script>
+<script>
   // Smooth scrolling (for future use if you want)
   function scrollToSection(id) {
     document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
   }
 
   // Grab elements
-  const orderBtn = document.getElementById("orderBtn");
   const orderPopup = document.getElementById("orderPopup");
   const closeBtn = document.querySelector(".popup .close");
   const orderForm = document.getElementById("orderForm");
 
-  // Open popup
-  orderBtn.addEventListener("click", (e) => {
-    e.preventDefault(); // prevents the page from jumping
-    orderPopup.style.display = "flex"; // match your CSS display
+  // Open popup on any button/link with class="orderBtn"
+  document.querySelectorAll(".orderBtn").forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      orderPopup.style.display = "flex"; // match your CSS
+    });
   });
 
   // Close popup (X button)
@@ -334,6 +335,6 @@
     orderForm.reset(); // clears form for next use
   });
 </script>
-
+  
 </body>
 </html>
