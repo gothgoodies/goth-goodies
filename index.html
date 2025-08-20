@@ -196,9 +196,10 @@
     </div>
   </main>
 
-<!-- Order Popup -->
-<div id="orderPopup" class="popup-overlay">
+<!-- Order Form Popup -->
+<div id="orderPopup" class="popup">
   <div class="popup-content">
+    <span class="close">&times;</span>
     <h2>Place Your Desire</h2>
     <form id="orderForm">
       <label for="name">Your Name:</label>
@@ -208,22 +209,20 @@
       <input type="email" id="email" name="email" required>
 
       <label for="product">Choose a Product:</label>
-      <select id="product" name="product" required>
-        <option value="">-- Select --</option>
+      <select id="product" name="product">
         <option value="baking">Baking</option>
         <option value="beads">Beads</option>
         <option value="stickers">Stickers</option>
-        <option value="canvas">Canvas Art</option>
+        <option value="art">Canvas Art</option>
         <option value="jewelry">Jewelry</option>
         <option value="other">Other</option>
       </select>
 
-      <label for="details">Order Details (Size, Flavor, Color, etc):</label>
-      <textarea id="details" name="details" placeholder="Describe your specifics to the vampires here..."></textarea>
+      <label for="details">Order Details (Size/Flavor, Color, etc.):</label>
+      <textarea id="details" name="details" rows="4"></textarea>
 
       <button type="submit" class="submit-btn">Submit Order to Altar</button>
     </form>
-    <button class="close-btn" onclick="closePopup()">Close</button>
   </div>
 </div>
 
