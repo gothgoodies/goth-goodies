@@ -95,8 +95,11 @@ h1, h2, h3 {
 .nav-buttons a {
   color: #e6dcc6;
   text-decoration: none;
-  font-family: 'Sepian', serif;
-  font-size: 1.2rem;
+  font-family: 'UnifrakturCook', 'Sepian', serif;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+  
   padding: 10px 22px;
   position: relative;
   display: inline-block;
