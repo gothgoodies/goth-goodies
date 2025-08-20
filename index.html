@@ -287,11 +287,53 @@
     <p>&copy; 2025 Goth Goodies</p>
   </footer>
 
-  <script>
-    function scrollToSection(id) {
-      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+ <script>
+  // Smooth scrolling (for future use if you want)
+  function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  }
+
+  // Grab elements
+  const orderBtn = document.getElementById("orderBtn");
+  const orderPopup = document.getElementById("orderPopup");
+  const closeBtn = document.querySelector(".popup .close");
+  const orderForm = document.getElementById("orderForm");
+
+  // Open popup
+  orderBtn.addEventListener("click", (e) => {
+    e.preventDefault(); // prevents the page from jumping
+    orderPopup.style.display = "flex"; // match your CSS display
+  });
+
+  // Close popup (X button)
+  closeBtn.addEventListener("click", () => {
+    orderPopup.style.display = "none";
+  });
+
+  // Close popup if clicked outside content
+  window.addEventListener("click", (e) => {
+    if (e.target === orderPopup) {
+      orderPopup.style.display = "none";
     }
-  </script>
+  });
+
+  // Handle form submission
+  orderForm.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const product = document.getElementById("product").value;
+    const details = document.getElementById("details").value;
+
+    console.log("Order submitted:", { name, email, product, details });
+
+    alert("🦇 Your desire has been placed at the altar. You'll be contacted soon.");
+
+    orderPopup.style.display = "none";
+    orderForm.reset(); // clears form for next use
+  });
+</script>
 
 </body>
 </html>
