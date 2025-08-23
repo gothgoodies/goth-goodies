@@ -62,3 +62,37 @@ if (orderForm) {
     closePopup();
   });
 }
+
+// ========================
+// CART POPUP LOGIC
+// ========================
+
+const cartBtn = document.getElementById("cartBtn");
+const cartPopup = document.getElementById("cartPopup"); // make sure this exists in your HTML
+const cartClose = document.querySelector(".cart-popup .close");
+
+function openCart() {
+  cartPopup.style.display = "flex";
+}
+
+function closeCart() {
+  cartPopup.style.display = "none";
+}
+
+if (cartBtn) {
+  cartBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    openCart();
+  });
+}
+
+if (cartClose) {
+  cartClose.addEventListener("click", closeCart);
+}
+
+window.addEventListener("click", (e) => {
+  if (e.target === cartPopup) {
+    closeCart();
+  }
+});
+
