@@ -246,6 +246,70 @@ h1, h2, h3 {
   text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
 }
 
+/* --- Crypt (Gallery Section refinement) --- */
+#crypt {
+  margin: 60px auto;
+  padding: 20px;
+  max-width: 1100px;
+}
+
+.gallery-category {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.category-title {
+  font-family: "Cinzel", serif;
+  font-size: 2rem;
+  color: #e0e0e0;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px black;
+  letter-spacing: 2px;
+}
+
+.gallery-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.gallery-item img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.product-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 400px;
+  text-align: left;
+}
+
+.product-list li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #cfcfcf;
+  margin-bottom: 6px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+/* Dividers between Crypt categories */
+.gallery-category:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 2px;
+  margin: 40px auto;
+  background: linear-gradient(to right, transparent, crimson, transparent);
+  opacity: 0.6;
+}
+
 /* Section Titles (Hall of Fangs, Eye Catching Creations, Crypt, etc.) */
 .section-title, 
 .featured-gallery h2, 
