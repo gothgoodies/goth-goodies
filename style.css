@@ -479,24 +479,32 @@ p, .nav-buttons a, .submit-btn {
   box-shadow: 0 0 20px rgba(0,0,0,0.8);
   text-align: center;
   font-family: 'Sepian', serif;
+  overflow-y: auto; /* ensures content scrolls if too tall */
+  max-height: 80vh; /* never taller than 80% of screen */
 }
 
-#cartPopup h2 {
-  margin-top: 0;
-  font-size: 1.8rem;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.9);
+/* Popup content elements */
+#cartPopup h2,
+#cartPopup p,
+#cartPopup ul,
+#cartPopup li {
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.9); /* subtle glow for readability */
+  margin: 0.5rem 0;
 }
 
-#cartPopup p {
-  margin: 1rem 0;
-}
-
-.close-cart {
+/* Close button (X) */
+#cartPopup .close-cart {
   position: absolute;
   top: 10px;
   right: 15px;
   font-size: 1.5rem;
   cursor: pointer;
   color: #e6dcc6;
-  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.9);
+  transition: transform 0.2s ease;
+}
+
+#cartPopup .close-cart:hover {
+  transform: scale(1.2);
+  color: #fff;
 }
