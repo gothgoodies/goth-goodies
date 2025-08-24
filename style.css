@@ -37,11 +37,9 @@ body {
   padding: 0;
   font-family: 'Sepian', serif;
   background: #000 url("images/bridge.jpg") center / cover no-repeat fixed;
-}
-
-  background-size: cover;
   color: #e6dcc6; /* light tan */
   text-align: center;
+  background-size: cover;
 }
 
 /* Typography */
@@ -83,16 +81,8 @@ h1, h2, h3 {
 }
 
 /* Nav Buttons - Ornate Gothic Frames */
-.nav-buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-  margin-top: 1rem;
-  position: relative;
-}
-
-.nav-buttons a {
+.nav-buttons a,
+.nav-buttons button {
   color: #e6dcc6;
   text-decoration: none;
   font-family: 'UnifrakturCook', 'Sepian', serif;
@@ -104,10 +94,14 @@ h1, h2, h3 {
   transition: 0.3s;
   border-radius: 14px; /* rounded frame shape */
   overflow: hidden;
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 /* Main glowing frame */
-.nav-buttons a::before {
+.nav-buttons a::before,
+.nav-buttons button::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -119,7 +113,8 @@ h1, h2, h3 {
 }
 
 /* Inner gilded line */
-.nav-buttons a::after {
+.nav-buttons a::after,
+.nav-buttons button::after {
   content: "";
   position: absolute;
   inset: 4px;
@@ -130,13 +125,15 @@ h1, h2, h3 {
 }
 
 /* Hover - haunted golden glow */
-.nav-buttons a:hover::before {
+.nav-buttons a:hover::before,
+.nav-buttons button:hover::before {
   border-color: #fff6e0;
   box-shadow: inset 0 0 12px rgba(230,220,198,0.6),
               0 0 15px #e6dcc6;
 }
 
-.nav-buttons a:hover::after {
+.nav-buttons a:hover::after,
+.nav-buttons button:hover::after {
   border-color: #fff6e0;
   opacity: 1;
 }
