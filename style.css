@@ -208,80 +208,13 @@ h1, h2, h3 {
   margin: 5px 0;
 }
 
-/* Gallery Section */
+/* --- Gallery Section (final clean version) --- */
 .gallery {
   margin: 40px auto;
   padding: 20px;
-  /* you can keep any other existing styles here */
 }
 
-/* Grid layout for gallery items */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1.5rem;
-  padding-top: 1rem; /* optional extra spacing inside grid */
-}
-
-.gallery-item {
-  background: rgba(0,0,0,0.6);
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.7);
-  text-align: center;
-}
-
-.gallery-item img, 
-.fangs-item img {
-  width: 100%;
-  height: 250px; /* adjust this to make taller/shorter boxes */
-  object-fit: cover; 
-  border-radius: 8px; /* soft coffin curve */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
-}
-
-.gallery-item p {
-  margin-top: 0.5rem;
-  color: #e6dcc6;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
-}
-
-/* Make gallery items image + text sit side by side */
-.gallery-item {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 20px; /* space between image + list */
-  text-align: left; /* so list isn’t centered */
-}
-
-.gallery-item img {
-  width: 250px;   /* keeps images a nice size */
-  height: auto;
-  border-radius: 8px;
-}
-
-/* Product list box styles */
-.product-list {
-  list-style: none;
-  padding: 15px 20px;
-  margin: 0;
-  max-width: 400px;
-  text-align: left;
-  background: rgba(20, 20, 20, 0.7); /* dark semi-transparent box */
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.6);
-}
-
-.product-list li {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #cfcfcf;
-  margin-bottom: 6px;
-  font-family: "Cormorant Garamond", serif;
-}
-
-/* --- Crypt (Gallery Section refinement) --- */
+/* Crypt (Gallery Section refinement) */
 #crypt {
   margin: 60px auto;
   padding: 20px;
