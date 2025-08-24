@@ -462,37 +462,41 @@ p, .nav-buttons a, .submit-btn {
   text-shadow: 1px 1px 4px rgba(0,0,0,0.7); /* small, soft shadow */
 }
 
-/* Cart popup */
-#cartPopup.popup {
-  display: none;
+/* Cart Popup */
+#cartPopup {
+  display: none; /* hidden by default */
   position: fixed;
-  z-index: 100;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background: rgba(0,0,0,0.7);
-  justify-content: center;
-  align-items: center;
-}
-
-#cartPopup .popup-content {
-  background: rgba(30,30,30,0.95);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.95);
+  color: #e6dcc6;
   padding: 2rem;
   border-radius: 12px;
-  color: #e6dcc6;
+  z-index: 9999;
   max-width: 400px;
-  margin: 0 auto;
-  text-align: center;
+  width: 90%;
   box-shadow: 0 0 20px rgba(0,0,0,0.8);
+  text-align: center;
+  font-family: 'Sepian', serif;
 }
 
-#cartPopup .close-cart {
+#cartPopup h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.9);
+}
+
+#cartPopup p {
+  margin: 1rem 0;
+}
+
+.close-cart {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 10px;
+  right: 15px;
   font-size: 1.5rem;
   cursor: pointer;
   color: #e6dcc6;
+  font-weight: bold;
 }
