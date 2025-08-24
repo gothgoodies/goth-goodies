@@ -461,3 +461,38 @@ header nav a.cart-btn:hover {
 p, .nav-buttons a, .submit-btn {
   text-shadow: 1px 1px 4px rgba(0,0,0,0.7); /* small, soft shadow */
 }
+
+/* Cart popup */
+#cartPopup.popup {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+#cartPopup .popup-content {
+  background: rgba(30,30,30,0.95);
+  padding: 2rem;
+  border-radius: 12px;
+  color: #e6dcc6;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+
+#cartPopup .close-cart {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #e6dcc6;
+}
