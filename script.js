@@ -96,3 +96,21 @@ window.addEventListener("click", (e) => {
   }
 });
 
+// Button click navigation
+document.getElementById("gallery-btn").addEventListener("click", () => {
+  document.getElementById("crypt").scrollIntoView({ behavior: "smooth" });
+});
+
+document.getElementById("about-btn").addEventListener("click", () => {
+  document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+});
+
+document.getElementById("connect-btn").addEventListener("click", () => {
+  document.getElementById("connect").scrollIntoView({ behavior: "smooth" });
+});
+
+document.getElementById("cart-btn").addEventListener("click", () => {
+  document.getElementById("cart").scrollIntoView({ behavior: "smooth" });
+});
+
+// Order button already opens popup (leave it alone)
