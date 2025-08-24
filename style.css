@@ -36,9 +36,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Sepian', serif;
-  background: #000 url("images/bridge.jpg") center / cover no-repeat fixed;
   color: #e6dcc6; /* light tan */
   text-align: center;
+  
+  /* background image */
+  background: url("images/bridge.jpeg") no-repeat center center fixed;
   background-size: cover;
 }
 
