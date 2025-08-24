@@ -1,70 +1,84 @@
-// POPUP OPEN / CLOSE LOGIC
+// -------------------------------
+// POPUP LOGIC
+// -------------------------------
+
+// ORDER POPUP
 const orderPopup = document.getElementById("orderPopup");
-const closeBtn = document.querySelector(".popup .close");
+const orderCloseBtn = document.querySelector("#orderPopup .close");
 const orderForm = document.getElementById("orderForm");
 
-// Open Order popup
+// Open Order popup on button click
 document.querySelectorAll(".orderBtn").forEach(btn => {
   btn.addEventListener("click", e => {
     e.preventDefault();
-    orderPopup.style.display = "flex";
+    if (orderPopup) orderPopup.style.display = "flex";
   });
 });
 
-// Close Order popup
-if (closeBtn) closeBtn.addEventListener("click", () => {
-  orderPopup.style.display = "none";
-});
+// Close Order popup on X
+if (orderCloseBtn && orderPopup) {
+  orderCloseBtn.addEventListener("click", () => {
+    orderPopup.style.display = "none";
+  });
+}
 
-// Close if clicking outside popup
+// Close Order popup if clicking outside content
 window.addEventListener("click", e => {
   if (e.target === orderPopup) orderPopup.style.display = "none";
 });
 
-// FORM SUBMISSION
+// ORDER FORM SUBMISSION
 if (orderForm) {
   orderForm.addEventListener("submit", e => {
     e.preventDefault();
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const product = document.getElementById("product").value;
-    const details = document.getElementById("details").value;
+
+    const name = document.getElementById("name")?.value || "";
+    const email = document.getElementById("email")?.value || "";
+    const product = document.getElementById("product")?.value || "";
+    const details = document.getElementById("details")?.value || "";
 
     console.log("Order submitted:", { name, email, product, details });
     alert("🦇 Your desire has been placed at the altar. You'll be contacted soon.");
 
-    orderPopup.style.display = "none";
+    if (orderPopup) orderPopup.style.display = "none";
     orderForm.reset();
   });
 }
 
-// Cart popup
+// CART POPUP
 const cartPopup = document.getElementById("cartPopup");
-const closeCartBtn = document.querySelector(".close-cart");
+const cartCloseBtn = document.querySelector("#cartPopup .close-cart");
+const cartLink = document.querySelector('.nav-buttons a[href="#cart"]');
 
-// Open popup on cart button click
-document.querySelector(".cart-btn").addEventListener("click", (e) => {
-  e.preventDefault();
-  cartPopup.style.display = "flex";
-});
+// Open Cart popup
+if (cartLink && cartPopup) {
+  cartLink.addEventListener("click", e => {
+    e.preventDefault();
+    cartPopup.style.display = "flex";
+  });
+}
 
-// Close popup on X
-closeCartBtn.addEventListener("click", () => {
-  cartPopup.style.display = "none";
-});
-
-// Close if clicked outside content
-window.addEventListener("click", (e) => {
-  if (e.target === cartPopup) {
+// Close Cart popup on X
+if (cartCloseBtn && cartPopup) {
+  cartCloseBtn.addEventListener("click", () => {
     cartPopup.style.display = "none";
-  }
+  });
+}
+
+// Close Cart popup if clicking outside content
+window.addEventListener("click", e => {
+  if (e.target === cartPopup) cartPopup.style.display = "none";
 });
 
+// -------------------------------
 // SMOOTH SCROLL FOR NAV LINKS
+// -------------------------------
 document.querySelectorAll(".nav-buttons a[href^='#']").forEach(link => {
   link.addEventListener("click", e => {
-    e.preventDefault();
     const target = document.querySelector(link.getAttribute("href"));
-    if (target) target.scrollIntoView({ behavior: "smooth" });
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: "smooth" });
+    }
   });
 });
