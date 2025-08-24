@@ -38,6 +38,28 @@ if (orderForm) {
   });
 }
 
+// Cart popup
+const cartPopup = document.getElementById("cartPopup");
+const closeCartBtn = document.querySelector(".close-cart");
+
+// Open popup on cart button click
+document.querySelector(".cart-btn").addEventListener("click", (e) => {
+  e.preventDefault();
+  cartPopup.style.display = "flex";
+});
+
+// Close popup on X
+closeCartBtn.addEventListener("click", () => {
+  cartPopup.style.display = "none";
+});
+
+// Close if clicked outside content
+window.addEventListener("click", (e) => {
+  if (e.target === cartPopup) {
+    cartPopup.style.display = "none";
+  }
+});
+
 // SMOOTH SCROLL FOR NAV LINKS
 document.querySelectorAll(".nav-buttons a[href^='#']").forEach(link => {
   link.addEventListener("click", e => {
