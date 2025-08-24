@@ -1,4 +1,1 @@
 
-git add -A
-git commit -m "Delete accidental gallery folder in images"
-git push
