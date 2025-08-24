@@ -645,3 +645,22 @@ p, .nav-buttons a, .submit-btn {
   max-width: 250px;
   margin: 5px;  /* little gap between multiple images */
 }
+
+/* Mobile gallery fix */
+@media (max-width: 768px) {
+  .gallery-item {
+    flex-direction: column;   /* stack neatly */
+    text-align: center;       /* center the text under the images */
+  }
+
+  .gallery-item img {
+    max-width: 90%;           /* shrink slightly for small screens */
+    height: auto;             /* keep proportions */
+  }
+
+  .product-list {
+    text-align: center;       /* center the bullet points */
+    margin-top: 15px;
+  }
+}
+
