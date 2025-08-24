@@ -246,6 +246,41 @@ h1, h2, h3 {
   text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
 }
 
+/* Make gallery items image + text sit side by side */
+.gallery-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px; /* space between image + list */
+  text-align: left; /* so list isn’t centered */
+}
+
+.gallery-item img {
+  width: 250px;   /* keeps images a nice size */
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Product list box styles */
+.product-list {
+  list-style: none;
+  padding: 15px 20px;
+  margin: 0;
+  max-width: 400px;
+  text-align: left;
+  background: rgba(20, 20, 20, 0.7); /* dark semi-transparent box */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+.product-list li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #cfcfcf;
+  margin-bottom: 6px;
+  font-family: "Cormorant Garamond", serif;
+}
+
 /* --- Crypt (Gallery Section refinement) --- */
 #crypt {
   margin: 60px auto;
