@@ -231,16 +231,46 @@ h1, h2, h3 {
   text-align: center;
 }
 
-.gallery-item img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
+.gallery-item img, 
+.fangs-item img {
+  width: 100%;
+  height: 250px; /* adjust this to make taller/shorter boxes */
+  object-fit: cover; 
+  border-radius: 8px; /* soft coffin curve */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
 }
 
 .gallery-item p {
   margin-top: 0.5rem;
   color: #e6dcc6;
   text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+}
+
+/* Section Titles (Hall of Fangs, Eye Catching Creations, Crypt, etc.) */
+.section-title, 
+.featured-gallery h2, 
+#crypt h2 {
+  font-family: 'Cinzel Decorative', 'Sepian', 'Clockwork', serif;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #f5f5f5; /* ghost white */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+}
+
+.section-title::after, 
+.featured-gallery h2::after, 
+#crypt h2::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(to right, crimson, transparent, crimson);
+  margin: 10px auto 0;
+  opacity: 0.7;
 }
 
 /* Footer */
