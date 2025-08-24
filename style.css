@@ -622,3 +622,26 @@ p, .nav-buttons a, .submit-btn {
   transform: scale(1.2);
   color: #fff;
 }
+
+/* --- Mobile Fix for Gallery --- */
+@media (max-width: 768px) {
+  .gallery-item {
+    flex-direction: column;   /* stack neatly */
+    text-align: center;       /* center text under images */
+  }
+
+  .gallery-item img {
+    margin-bottom: 10px;      /* breathing room between img + text */
+  }
+
+  .product-list {
+    text-align: center;       /* center product text */
+    max-width: none;
+  }
+}
+
+/* --- Multiple images per product --- */
+.gallery-item img {
+  max-width: 250px;
+  margin: 5px;  /* little gap between multiple images */
+}
