@@ -32,6 +32,22 @@
   margin-bottom: .75rem;
 }
 
+/* Hero spacing tweaks */
+.hero {
+  padding-top: 6rem;    /* more space above title/logo */
+  padding-bottom: 5rem; /* more space below slogan/buttons */
+}
+
+.hero .slogan {
+  margin-bottom: 3rem;  /* space between slogan and buttons */
+  line-height: 1.6;     /* improves readability */
+}
+
+/* Optional: give buttons a bit more breathing room */
+.nav-buttons a {
+  margin: 0 10px;       /* horizontal spacing between buttons */
+}
+
 body {
   margin: 0;
   padding: 0;
