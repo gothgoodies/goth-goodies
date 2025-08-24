@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
   color: #e6dcc6;
   text-align: center;
-  padding: 4rem 1rem;
+   padding: 6rem 1rem 5rem 1rem; /* combined top & bottom padding */
 }
 
 .hero-overlay {
@@ -455,4 +455,9 @@ header nav a.orderBtn:hover,
 header nav a.cart-btn:hover {
   background: #fff6e0;
   box-shadow: 0 0 8px #e6dcc6;
+}
+
+/* subtle transparent text shadows for readability */
+p, .nav-buttons a, .submit-btn {
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7); /* small, soft shadow */
 }
