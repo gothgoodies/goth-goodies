@@ -212,6 +212,35 @@ h1, h2, h3 {
 .gallery {
   margin: 40px auto;
   padding: 20px;
+  /* you can keep any other existing styles here */
+}
+
+/* Grid layout for gallery items */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  padding-top: 1rem; /* optional extra spacing inside grid */
+}
+
+.gallery-item {
+  background: rgba(0,0,0,0.6);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.7);
+  text-align: center;
+}
+
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.gallery-item p {
+  margin-top: 0.5rem;
+  color: #e6dcc6;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
 }
 
 /* Footer */
