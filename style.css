@@ -38,10 +38,11 @@ body {
   font-family: 'Sepian', serif;
   color: #e6dcc6; /* light tan */
   text-align: center;
-  
-  /* background image */
+
   background: url("images/bridge.jpeg") no-repeat center center fixed;
-  background-size: cover;
+  background-size: contain; /* fits full image without zooming */
+  background-color: #000; /* fallback */
+  filter: brightness(0.8) contrast(1.1); /* darkens & adds subtle contrast */
 }
 
 /* Typography */
