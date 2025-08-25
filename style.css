@@ -235,12 +235,16 @@ h1, h2, h3 {
   letter-spacing: 2px;
 }
 
+/* The red glowing box with image + list side by side */
 .gallery-item {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 30px;
-  flex-wrap: wrap;
+  background: rgba(50, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+  margin-bottom: 20px;
 }
 
 .gallery-item img {
@@ -257,6 +261,7 @@ h1, h2, h3 {
   margin: 0;
   max-width: 400px;
   text-align: left;
+  flex: 1;
 }
 
 .product-list li {
@@ -265,6 +270,24 @@ h1, h2, h3 {
   color: #cfcfcf;
   margin-bottom: 6px;
   font-family: "Cormorant Garamond", serif;
+}
+
+/* Mobile stacking (so it doesn’t squish) */
+@media (max-width: 600px) {
+  .gallery-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  .product-list {
+    text-align: center;
+  }
 }
 
 /* Dividers between Crypt categories */
