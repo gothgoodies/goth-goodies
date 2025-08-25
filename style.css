@@ -290,6 +290,80 @@ h1, h2, h3 {
   }
 }
 
+/* Crypt (Gallery Section refinement) */
+#crypt {
+  margin: 60px auto;
+  padding: 20px;
+  max-width: 1100px;
+}
+
+.gallery-category {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.category-title {
+  font-family: "Cinzel", serif;
+  font-size: 2rem;
+  color: #e0e0e0;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px black;
+  letter-spacing: 2px;
+}
+
+.gallery-item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: rgba(50, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+.gallery-item img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.product-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 400px;
+  text-align: left;
+  flex: 1;
+}
+
+.product-list li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #cfcfcf;
+  margin-bottom: 6px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+@media (max-width: 600px) {
+  .gallery-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  .product-list {
+    text-align: center;
+  }
+}
+
 /* Dividers between Crypt categories */
 .gallery-category:not(:last-child)::after {
   content: "";
