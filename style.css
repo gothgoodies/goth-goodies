@@ -2,7 +2,7 @@
 
 /* Global repeating bridge background */
 body {
-  background: url("images/bridge-background.png") repeat-y center top;
+  background: url("images/bridge.jpeg") repeat-y center top;
   background-size: auto; /* keeps the original size of your image */
   margin: 0;
   padding: 0;
