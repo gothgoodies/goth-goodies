@@ -1,11 +1,17 @@
 /* Reset & base */
 
-/* Global repeating bridge background */
 body {
-  background: url("images/bridge.jpeg") repeat-y center top;
-  background-size: auto; /* keeps the original size of your image */
   margin: 0;
   padding: 0;
+  font-family: 'Sepian', serif;
+  color: #e6dcc6;
+  text-align: center;
+
+  background: url("images/bridge.jpeg") repeat center top;
+  background-size: cover;   /* scales nicely across devices */
+  background-attachment: scroll; /* prevents iOS issues */
+  background-color: #000;   /* fallback */
+  filter: brightness(0.8) contrast(1.1);
 }
 
 /* hero background */
@@ -60,13 +66,14 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Sepian', serif;
-  color: #e6dcc6; /* light tan */
+  color: #e6dcc6;
   text-align: center;
 
-  background: url("images/bridge.jpeg") no-repeat center center fixed;
-  background-size: contain; /* fits full image without zooming */
-  background-color: #000; /* fallback */
-  filter: brightness(0.8) contrast(1.1); /* darkens & adds subtle contrast */
+  background: url("images/bridge.jpeg") repeat center top;
+  background-size: cover;   /* scales nicely across devices */
+  background-attachment: scroll; /* prevents iOS issues */
+  background-color: #000;   /* fallback */
+  filter: brightness(0.8) contrast(1.1);
 }
 
 /* Typography */
